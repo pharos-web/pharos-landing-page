@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food & Beverage Saliency Treemap</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      background-color: #2236A7;
+      font-family: "Inter", sans-serif;
+      margin: 0;
+      padding: 2rem;
+      color: white;
+    }
+    svg {
+      font-family: "Inter", sans-serif;
+    }
+    .title {
+      font-family: "BIZ UDPMincho", serif;
+      font-size: 24px;
+      fill: white;
+      text-anchor: middle;
+    }
+    .subtitle {
+      font-family: "BIZ UDPMincho", serif;
+      font-size: 14px;
+      fill: white;
+      text-anchor: middle;
+    }
+    .tooltip {
+      position: absolute;
+      text-align: center;
+      padding: 8px;
+      font-size: 12px;
+      background: white;
+      border: 1px solid #aaa;
+      pointer-events: none;
+      opacity: 0;
+      border-radius: 4px;
+      color: black;
+    }
+    select {
+      font-family: "Inter", sans-serif;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h2 class="title" style="text-align:center">Saliency of food & beverage product categories in inflation-related news</h2>
+  <h4 class="subtitle" style="text-align:center">US News - January to March 2025</h4>
+
+  <div style="text-align:center">
+    <label for="filter-type">Group by:</label>
+    <select id="filter-type">
+      <option value="year">Year</option>
+      <option value="month">Month</option>
+    </select>
+
+    <select id="time-select"></select>
+  </div>
+
+  <svg width="960" height="600"></svg>
+  <div class="tooltip"></div>
+
+  <script>
+    const svg = d3.select("svg");
+    const tooltip = d3.select(".tooltip");
+    const width = +svg.attr("width");
+    const height = +svg.attr("height");
+
+    const color = d3.scaleOrdinal(d3.schemeTableau10);
+
+    d3.json("../../../data/processed/food_subsub_saliency.json").then(data => {
+      data.forEach(d => {
+        d.date = new Date(d.date);
+        d.year = d.date.getFullYear();
+        d.month = d3.timeFormat("%Y-%m")(d.date);
+        d.saliency = +d.saliency;
+      });
+
+      const filterType = d3.select("#filter-type");
+      const timeSelect = d3.select("#time-select");
+
+      function updateTimeOptions() {
+        const selected = filterType.property("value");
+        const values = Array.from(new Set(data.map(d => d[selected]))).sort();
+        timeSelect.selectAll("option").remove();
+        values.forEach(v => timeSelect.append("option").attr("value", v).text(v));
+      }
+
+      filterType.on("change", () => {
+        updateTimeOptions();
+        drawTreemap();
+      });
+
+      timeSelect.on("change", drawTreemap);
+
+      function drawTreemap() {
+        const type = filterType.property("value");
+        const value = timeSelect.property("value");
+
+        const filtered = data.filter(d => String(d[type]) === value);
+
+        const hierarchyData = {
+          name: "root",
+          children: Array.from(d3.group(filtered, d => d.subcategory), ([key, values]) => ({
+            name: key,
+            children: values.map(d => ({ name: d.subsub_category, value: d.saliency }))
+          }))
+        };
+
+        const root = d3.hierarchy(hierarchyData).sum(d => d.value);
+        const treemapLayout = d3.treemap().size([width, height]).padding(2);
+        treemapLayout(root);
+
+        svg.selectAll("g").remove();
+
+        const node = svg.selectAll("g")
+          .data(root.leaves())
+          .enter()
+          .append("g")
+          .attr("transform", d => `translate(${d.x0},${d.y0})`);
+
+        node.append("rect")
+          .attr("width", d => d.x1 - d.x0)
+          .attr("height", d => d.y1 - d.y0)
+          .attr("fill", d => color(d.parent.data.name))
+          .on("mouseover", (event, d) => {
+            tooltip.style("opacity", 1)
+                   .html(`${d.parent.data.name} / ${d.data.name}<br>Saliency: ${d.value.toFixed(4)}`);
+          })
+          .on("mousemove", event => {
+            tooltip.style("left", (event.pageX + 10) + "px")
+                   .style("top", (event.pageY + 10) + "px");
+          })
+          .on("mouseout", () => tooltip.style("opacity", 0));
+
+        node.append("text")
+          .attr("x", 4)
+          .attr("y", 14)
+          .attr("fill", "white")
+          .attr("font-size", "12px")
+          .text(d => d.data.name);
+      }
+
+      updateTimeOptions();
+      drawTreemap();
+    });
+  </script>
+</body>
+</html>
