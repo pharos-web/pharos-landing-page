@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Key topics in economic news</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            background-color: #091245;
+            font-family: 'Inter', sans-serif;
+            color: white;
+            text-align: center;
+        }
+        h1, h2 {
+            font-family: 'BIZ UDPMincho', serif;
+            color: white;
+        }
+        .chart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        svg {
+            background: white;
+            border-radius: 8px;
+        }
+        .legend {
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            fill: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Key topics in economic news</h1>
+    <h2>US News - January to March 2025</h2>
+    <div class="chart-container">
+        <svg width="1000" height="500"></svg>
+    </div>
+
+    <script>
+        const svg = d3.select("svg"),
+              margin = {top: 60, right: 150, bottom: 60, left: 70},
+              width = +svg.attr("width") - margin.left - margin.right,
+              height = +svg.attr("height") - margin.top - margin.bottom,
+              g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+        const parseDate = d3.timeParse("%Y-%m-%d");
+        const color = d3.scaleOrdinal()
+            .domain(["Inflation", "Trade war", "Immigration", "Recession"])
+            .range(["#2073de", "#03a9f4", "#ff8747", "#DC3545", "#6F42C1"]);
+
+        const smooth = (series) => {
+            return series.map((_, i) => {
+                const window = series.slice(Math.max(0, i - 6), i + 1);
+                return {
+                    date: series[i].date,
+                    value: d3.mean(window, d => d.value)
+                };
+            });
+        };
+
+        d3.json("/data/processed/inflation_index.json").then(data => {
+            data = data.filter(d => d.date.startsWith("2025"));
+            data.forEach(d => {
+                d.date = parseDate(d.date);
+                d.inflation_index_clean = +d.inflation_index_clean;
+                d.trade_war_index = +d.trade_war_index;
+                d.immigration_index = +d.immigration_index;
+                d.recession_index = +d.recession_index;
+            });
+
+            const series = [
+                {key: "inflation_index_clean", label: "Inflation index"},
+                {key: "trade_war_index", label: "Trade war index"},
+                {key: "immigration_index", label: "Immigration Index"},
+                {key: "recession_index", label: "Recession index"}
+            ];
+
+            const x = d3.scaleTime()
+                .domain(d3.extent(data, d => d.date))
+                .range([0, width]);
+
+            const y = d3.scaleLinear()
+                .domain([0, 100])
+                .range([height, 0]);
+
+            g.append("g")
+                .attr("transform", `translate(0,${height})`)
+                .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%b %d")))
+                .call(g => g.selectAll(".domain").attr("stroke", "black"))
+                .selectAll("text")
+                .attr("transform", "rotate(-45)")
+                .style("text-anchor", "end")
+                .style("fill", "black");
+
+                g.append("g")
+                    .call(d3.axisLeft(y))
+                    .call(g => g.selectAll(".domain").attr("stroke", "black"))
+                    .call(g => g.selectAll(".tick text").style("fill", "black"))
+                    .call(g => g.selectAll(".tick line")
+                        .clone()
+                        .attr("x2", width)
+                        .attr("stroke", "#999")
+                        .attr("stroke-opacity", 0.2));
+
+
+            svg.append("text")
+                .attr("fill", "black")
+                .attr("transform", `translate(20, ${margin.top + height / 2}) rotate(-90)`)
+                .attr("text-anchor", "middle")
+                .text("Topic saliency index");
+
+            series.forEach(s => {
+                const raw = data.map(d => ({date: d.date, value: d[s.key]}));
+                const lineData = smooth(raw);
+                g.append("path")
+                    .datum(lineData)
+                    .attr("fill", "none")
+                    .attr("stroke", color(s.label))
+                    .attr("stroke-width", 3)
+                    .attr("d", d3.line()
+                        .x(d => x(d.date))
+                        .y(d => y(d.value)));
+            });
+
+            const legend = svg.append("g")
+                .attr("class", "legend")
+                .attr("transform", `translate(${margin.left + width + 20}, ${margin.top})`);
+
+            series.forEach((s, i) => {
+                const yOffset = i * 20;
+                legend.append("rect")
+                    .attr("x", 0)
+                    .attr("y", yOffset)
+                    .attr("width", 12)
+                    .attr("height", 12)
+                    .attr("fill", color(s.label));
+
+                legend.append("text")
+                    .attr("x", 18)
+                    .attr("y", yOffset + 10)
+                    .text(s.label)
+                    .attr("fill", "black")
+                    .style("font-family", "Inter")
+                    .style("alignment-baseline", "middle");
+            });
+        });
+    </script>
+</body>
+</html>
