@@ -63,7 +63,7 @@
     <script>
         const ctx = document.getElementById('inflationMoodChart').getContext('2d');
     
-        fetch('../../data/processed/inflation_mood.json')
+        fetch('https://github.com/pharos-web/pharos-landing-page/blob/main/charts/mood/inflation_mood.json')
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
