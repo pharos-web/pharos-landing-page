@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Saliency Treemap</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Inter&display=swap" rel="stylesheet">
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            background-color: #2236A7;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1, h3 {
+            text-align: center;
+            color: #ffffff;
+            margin: 10px;
+        }
+
+        h1 {
+            font-family: 'BIZ UDPMincho', serif;
+            font-size: 34px;
+        }
+
+        h3 {
+            font-family: 'BIZ UDPMincho', serif;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .selector {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        select {
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            font-family: 'Inter', sans-serif;
+        }
+
+        #treemap {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .node {
+            box-sizing: border-box;
+            border: 1px solid white;
+            font-size: 12px;
+            overflow: hidden;
+        }
+
+        .node text {
+            pointer-events: none;
+            fill: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product category saliency in inflation-related news</h1>
+    <h3>US News - January to March 2025</h3>
+
+    <div class="selector">
+        <select id="timeSelector">
+            <option value="2025">Year: 2025</option>
+            <option value="2025-01">Month: January 2025</option>
+            <option value="2025-02">Month: February 2025</option>
+            <option value="2025-03">Month: March 2025</option>
+        </select>
+    </div>
+
+    <div id="treemap"></div>
+
+    <script>
+        const width = 1200;
+        const height = 600;
+
+        const svg = d3.select("#treemap")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        let data;
+        d3.json('/data/processed/category_saliency.json').then(rawData => {
+            data = rawData;
+            updateChart("2025");
+        }).catch(error => {
+            console.error("Error loading data:", error);
+            alert("Failed to load data: " + error.message);
+        });
+
+
+        document.getElementById("timeSelector").addEventListener("change", function() {
+            updateChart(this.value);
+        });
+
+        function updateChart(timePeriod) {
+    svg.selectAll("*").remove();
+
+    const filteredData = data.filter(d => d.date.startsWith(timePeriod));
+
+    const grouped = d3.rollup(filteredData,
+        v => d3.sum(v, d => d.saliency),
+        d => d.category);
+
+    const root = d3.hierarchy({values: Array.from(grouped, ([key, value]) => ({key, value}))}, d => d.values)
+        .sum(d => d.value)
+        .sort((a, b) => b.value - a.value);
+
+    d3.treemap()
+        .size([width, height])
+        .padding(2)(root);
+
+    const color = d3.scaleSequential(d3.interpolateTurbo)
+        .domain([0, root.leaves().length]);
+
+    const nodes = svg.selectAll(".node")
+        .data(root.leaves())
+        .enter()
+        .append("g")
+        .attr("class", "node")
+        .attr("transform", d => `translate(${d.x0},${d.y0})`);
+
+    nodes.append("rect")
+        .attr("width", d => d.x1 - d.x0)
+        .attr("height", d => d.y1 - d.y0)
+        .attr("fill", (d, i) => color(i));
+
+    nodes.append("text")
+        .attr("x", 4)
+        .attr("y", 20)
+        .attr("fill", "white")
+        .attr("font-weight", "bold")
+        .attr("font-size", "14px")
+        .text(d => `${d.data.key}: ${d.data.value.toFixed(2)}`)
+        .call(wrap,  d => d.x1 - d.x0 - 8);
+
+    // Function to wrap text within box clearly:
+    function wrap(text, width) {
+        text.each(function() {
+            const text = d3.select(this),
+                words = text.text().split(/\s+/).reverse(),
+                lineHeight = 1.2, // ems
+                y = text.attr("y"),
+                dy = 0,
+                x = text.attr("x");
+            
+            let word,
+                line = [],
+                lineNumber = 0,
+                tspan = text.text(null).append("tspan").attr("x", x).attr("y", y).attr("dy", dy + "em");
+            
+            while (word = words.pop()) {
+                line.push(word);
+                tspan.text(line.join(" "));
+                if (tspan.node().getComputedTextLength() > width) {
+                    line.pop();
+                    tspan.text(line.join(" "));
+                    line = [word];
+                    tspan = text.append("tspan")
+                        .attr("x", x)
+                        .attr("y", y)
+                        .attr("dy", ++lineNumber * lineHeight + dy + "em")
+                        .text(word);
+                }
+            }
+        });
+    }
+}
+
+    </script>
+</body>
+</html>
