@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inflation mood index</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #2439a8;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h3 {
+            color: #ffffff;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+
+        .chart-container {
+            width: 90%;
+            max-width: 1200px;
+            background-color: #ffffff;
+            margin: 0 auto 50px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            height: 500px;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inflation mood index</h1>
+    <h3>US News - January to March 2025</h3>
+
+    <div class="chart-container">
+        <canvas id="inflationMoodChart"></canvas>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('inflationMoodChart').getContext('2d');
+    
+        fetch('../../data/processed/inflation_mood.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(rawData => {
+                const data2025 = rawData.filter(entry => entry.date.startsWith('2025'));
+                const moodIndices = data2025.map(entry => entry.mood_index);
+    
+                const movingAverage = (data, windowSize) => {
+                    let avg = [];
+                    for (let i = 0; i < data.length; i++) {
+                        const window = data.slice(Math.max(0, i - windowSize + 1), i + 1);
+                        avg.push(window.reduce((a, b) => a + b) / window.length);
+                    }
+                    return avg;
+                };
+    
+                const smoothedMood = movingAverage(moodIndices, 7);
+                const clampedMood = smoothedMood.map(v => Math.max(-0.4, Math.min(0.4, v)));
+    
+                console.log("Mood range", Math.min(...clampedMood), Math.max(...clampedMood));
+    
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: data2025.map(entry => entry.date),
+                        datasets: [{
+                            label: 'Inflation mood (7-day MA)',
+                            data: clampedMood,
+                            fill: false,
+                            borderColor: '#2439a8',
+                            tension: 0.2,
+                            borderWidth: 2,
+                            pointRadius: 0
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                type: 'linear',
+                                display: true,
+                                min: -0.4,
+                                max: 0.4,
+                                grid: {
+                                    display: true,
+                                    color: 'rgba(0, 0, 0, 0.1)',
+                                    drawBorder: true,
+                                    drawTicks: true,
+                                    drawOnChartArea: true
+                                },
+                                title: {
+                                    display: true,
+                                    text: 'Inflation mood index',
+                                    font: { family: 'Inter', size: 14 },
+                                    color: 'black'
+                                },
+                                ticks: {
+                                    stepSize: 0.2,
+                                    font: { family: 'Inter' },
+                                    color: 'black',
+                                    precision: 2
+                                }
+                            },
+                            x: {
+                                grid: {
+                                    display: true,
+                                    color: 'rgba(0, 0, 0, 0.05)'
+                                },
+                                ticks: {
+                                    font: { family: 'Inter' },
+                                    color: 'black',
+                                    callback: function(value, index) {
+                                        return index % 7 === 0 ? this.getLabelForValue(value) : '';
+                                    }
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: { enabled: true }
+                        }
+                    }
+                });
+            })
+            .catch(error => {
+                console.error('Error loading mood data:', error);
+                alert('Failed to load data: ' + error.message);
+            });
+    </script>    
+</body>
+</html>
