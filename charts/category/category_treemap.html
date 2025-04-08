@@ -89,7 +89,7 @@
             .attr("height", height);
 
         let data;
-        d3.json('/data/processed/category_saliency.json').then(rawData => {
+        d3.json('https://github.com/pharos-web/pharos-landing-page/blob/main/charts/category/category_saliency.json').then(rawData => {
             data = rawData;
             updateChart("2025");
         }).catch(error => {
