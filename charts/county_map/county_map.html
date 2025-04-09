@@ -105,7 +105,7 @@
 
         Promise.all([
             d3.json("https://d3js.org/us-10m.v1.json"),
-            d3.json("../../../data/county_blame_scores.json")
+            d3.json("https://github.com/pharos-web/pharos-landing-page/blob/main/charts/county_map/county_blame_scores.json")
         ]).then(([us, blameData]) => {
             const weeks = Array.from(new Set(blameData.map(d => d.week))).sort();
             const targets = Array.from(new Set(blameData.map(d => d.target)));
