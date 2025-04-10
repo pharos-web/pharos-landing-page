@@ -85,7 +85,6 @@
   <script>
     const svg = d3.select("svg");
     const tooltip = d3.select(".tooltip");
-
     const color = d3.scaleOrdinal(d3.schemeTableau10);
 
     function renderTreemap(data) {
@@ -93,6 +92,8 @@
       const containerHeight = parseInt(svg.style("height"));
 
       svg.attr("viewBox", `0 0 ${containerWidth} ${containerHeight}`);
+
+      const totalSaliency = d3.sum(data.children, d => d3.sum(d.children, c => c.value));
 
       const root = d3.hierarchy(data).sum(d => d.value);
       d3.treemap().size([containerWidth, containerHeight]).padding(2)(root);
@@ -125,7 +126,7 @@
         .attr("font-size", "12px")
         .style("pointer-events", "none")
         .style("user-select", "none")
-        .text(d => `${d.data.name} (${d.value.toFixed(1)})`)
+        .text(d => `${d.data.name} ${((d.value / totalSaliency) * 100).toFixed(1)}%`)
         .each(function (d) {
           const rectWidth = d.x1 - d.x0;
           const rectHeight = d.y1 - d.y0;
@@ -135,13 +136,15 @@
         });
     }
 
-    d3.json("https://github.com/pharos-web/pharos-landing-page/blob/main/charts/food/food_subsub_saliency.json").then(data => {
+    d3.json("../../../data/processed/food_subsub_saliency.json").then(data => {
       data.forEach(d => {
         d.date = new Date(d.date);
         d.year = d.date.getFullYear();
         d.month = d3.timeFormat("%Y-%m")(d.date);
         d.saliency = +d.saliency;
       });
+
+      data = data.filter(d => d.year === 2025);
 
       const filterType = d3.select("#filter-type");
       const timeSelect = d3.select("#time-select");
