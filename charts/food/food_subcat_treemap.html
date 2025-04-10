@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Food & Beverage Saliency Treemap</title>
@@ -11,22 +12,41 @@
       margin: 0;
       padding: 2rem;
       color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-    svg {
-      font-family: "Inter", sans-serif;
-    }
+
     .title {
       font-family: "BIZ UDPMincho", serif;
       font-size: 24px;
-      fill: white;
-      text-anchor: middle;
+      text-align: center;
     }
+
     .subtitle {
       font-family: "BIZ UDPMincho", serif;
       font-size: 14px;
-      fill: white;
-      text-anchor: middle;
+      text-align: center;
     }
+
+    select {
+      font-family: "Inter", sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    .svg-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    svg {
+      width: 100%;
+      max-width: 960px;
+      height: 600px;
+    }
+
     .tooltip {
       position: absolute;
       text-align: center;
@@ -39,17 +59,14 @@
       border-radius: 4px;
       color: black;
     }
-    select {
-      font-family: "Inter", sans-serif;
-      margin-bottom: 1rem;
-    }
   </style>
 </head>
-<body>
-  <h2 class="title" style="text-align:center">Saliency of food & beverage product categories in inflation-related news</h2>
-  <h4 class="subtitle" style="text-align:center">US News - January to March 2025</h4>
 
-  <div style="text-align:center">
+<body>
+  <h2 class="title">Saliency of food & beverage product categories in inflation-related news</h2>
+  <h4 class="subtitle">US News - January to March 2025</h4>
+
+  <div>
     <label for="filter-type">Group by:</label>
     <select id="filter-type">
       <option value="year">Year</option>
@@ -59,18 +76,66 @@
     <select id="time-select"></select>
   </div>
 
-  <svg width="960" height="600"></svg>
+  <div class="svg-container">
+    <svg></svg>
+  </div>
+
   <div class="tooltip"></div>
 
   <script>
     const svg = d3.select("svg");
     const tooltip = d3.select(".tooltip");
-    const width = +svg.attr("width");
-    const height = +svg.attr("height");
 
     const color = d3.scaleOrdinal(d3.schemeTableau10);
 
-    d3.json("https://github.com/pharos-web/pharos-landing-page/blob/main/charts/food/food_subsub_saliency.json").then(data => {
+    function renderTreemap(data) {
+      const containerWidth = parseInt(svg.style("width"));
+      const containerHeight = parseInt(svg.style("height"));
+
+      svg.attr("viewBox", `0 0 ${containerWidth} ${containerHeight}`);
+
+      const root = d3.hierarchy(data).sum(d => d.value);
+      d3.treemap().size([containerWidth, containerHeight]).padding(2)(root);
+
+      svg.selectAll("g").remove();
+
+      const node = svg.selectAll("g")
+        .data(root.leaves())
+        .enter().append("g")
+        .attr("transform", d => `translate(${d.x0},${d.y0})`);
+
+      node.append("rect")
+        .attr("width", d => d.x1 - d.x0)
+        .attr("height", d => d.y1 - d.y0)
+        .attr("fill", d => color(d.parent.data.name))
+        .on("mouseover", (event, d) => {
+          tooltip.style("opacity", 1)
+            .html(`${d.parent.data.name} / ${d.data.name}<br>Saliency: ${d.value.toFixed(4)}`);
+        })
+        .on("mousemove", event => {
+          tooltip.style("left", (event.pageX + 10) + "px")
+            .style("top", (event.pageY + 10) + "px");
+        })
+        .on("mouseout", () => tooltip.style("opacity", 0));
+
+      node.append("text")
+        .attr("x", 4)
+        .attr("y", 14)
+        .attr("fill", "white")
+        .attr("font-size", "12px")
+        .style("pointer-events", "none")
+        .style("user-select", "none")
+        .text(d => `${d.data.name} (${d.value.toFixed(1)})`)
+        .each(function (d) {
+          const rectWidth = d.x1 - d.x0;
+          const rectHeight = d.y1 - d.y0;
+          if (this.getComputedTextLength() > rectWidth - 6 || rectHeight < 16) {
+            d3.select(this).remove();
+          }
+        });
+    }
+
+    d3.json("../../../data/processed/food_subsub_saliency.json").then(data => {
       data.forEach(d => {
         d.date = new Date(d.date);
         d.year = d.date.getFullYear();
@@ -90,62 +155,45 @@
 
       filterType.on("change", () => {
         updateTimeOptions();
-        drawTreemap();
+        draw();
       });
 
-      timeSelect.on("change", drawTreemap);
+      timeSelect.on("change", draw);
 
-      function drawTreemap() {
-        const type = filterType.property("value");
-        const value = timeSelect.property("value");
-
+      function aggregateData(type, value) {
         const filtered = data.filter(d => String(d[type]) === value);
+        const aggMap = new Map();
 
-        const hierarchyData = {
+        filtered.forEach(d => {
+          const key = `${d.subcategory}||${d.subsub_category}`;
+          if (aggMap.has(key)) {
+            aggMap.get(key).value += d.saliency;
+          } else {
+            aggMap.set(key, { subcategory: d.subcategory, subsub_category: d.subsub_category, value: d.saliency });
+          }
+        });
+
+        const hierarchy = {
           name: "root",
-          children: Array.from(d3.group(filtered, d => d.subcategory), ([key, values]) => ({
-            name: key,
-            children: values.map(d => ({ name: d.subsub_category, value: d.saliency }))
+          children: Array.from(d3.group([...aggMap.values()], d => d.subcategory), ([subcategory, items]) => ({
+            name: subcategory,
+            children: items.map(i => ({ name: i.subsub_category, value: i.value }))
           }))
         };
+        return hierarchy;
+      }
 
-        const root = d3.hierarchy(hierarchyData).sum(d => d.value);
-        const treemapLayout = d3.treemap().size([width, height]).padding(2);
-        treemapLayout(root);
-
-        svg.selectAll("g").remove();
-
-        const node = svg.selectAll("g")
-          .data(root.leaves())
-          .enter()
-          .append("g")
-          .attr("transform", d => `translate(${d.x0},${d.y0})`);
-
-        node.append("rect")
-          .attr("width", d => d.x1 - d.x0)
-          .attr("height", d => d.y1 - d.y0)
-          .attr("fill", d => color(d.parent.data.name))
-          .on("mouseover", (event, d) => {
-            tooltip.style("opacity", 1)
-                   .html(`${d.parent.data.name} / ${d.data.name}<br>Saliency: ${d.value.toFixed(4)}`);
-          })
-          .on("mousemove", event => {
-            tooltip.style("left", (event.pageX + 10) + "px")
-                   .style("top", (event.pageY + 10) + "px");
-          })
-          .on("mouseout", () => tooltip.style("opacity", 0));
-
-        node.append("text")
-          .attr("x", 4)
-          .attr("y", 14)
-          .attr("fill", "white")
-          .attr("font-size", "12px")
-          .text(d => d.data.name);
+      function draw() {
+        const type = filterType.property("value");
+        const value = timeSelect.property("value");
+        const hierarchicalData = aggregateData(type, value);
+        renderTreemap(hierarchicalData);
       }
 
       updateTimeOptions();
-      drawTreemap();
+      draw();
     });
   </script>
 </body>
+
 </html>
