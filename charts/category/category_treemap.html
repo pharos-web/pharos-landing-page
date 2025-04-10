@@ -89,7 +89,7 @@
             .attr("height", height);
 
         let data;
-        d3.json('https://github.com/pharos-web/pharos-landing-page/blob/main/charts/category/category_saliency.json').then(rawData => {
+        d3.json('/data/processed/category_saliency.json').then(rawData => {
             data = rawData;
             updateChart("2025");
         }).catch(error => {
@@ -97,84 +97,84 @@
             alert("Failed to load data: " + error.message);
         });
 
-
         document.getElementById("timeSelector").addEventListener("change", function() {
             updateChart(this.value);
         });
 
         function updateChart(timePeriod) {
-    svg.selectAll("*").remove();
+            svg.selectAll("*").remove();
 
-    const filteredData = data.filter(d => d.date.startsWith(timePeriod));
+            const filteredData = data.filter(d => d.date.startsWith(timePeriod));
 
-    const grouped = d3.rollup(filteredData,
-        v => d3.sum(v, d => d.saliency),
-        d => d.category);
+            const grouped = d3.rollup(filteredData,
+                v => d3.sum(v, d => d.saliency),
+                d => d.category);
 
-    const root = d3.hierarchy({values: Array.from(grouped, ([key, value]) => ({key, value}))}, d => d.values)
-        .sum(d => d.value)
-        .sort((a, b) => b.value - a.value);
+            const totalSaliency = Array.from(grouped.values()).reduce((sum, value) => sum + value, 0);
 
-    d3.treemap()
-        .size([width, height])
-        .padding(2)(root);
+            const root = d3.hierarchy({values: Array.from(grouped, ([key, value]) => ({key, value}))}, d => d.values)
+                .sum(d => d.value)
+                .sort((a, b) => b.value - a.value);
 
-    const color = d3.scaleSequential(d3.interpolateTurbo)
-        .domain([0, root.leaves().length]);
+            d3.treemap()
+                .size([width, height])
+                .padding(2)(root);
 
-    const nodes = svg.selectAll(".node")
-        .data(root.leaves())
-        .enter()
-        .append("g")
-        .attr("class", "node")
-        .attr("transform", d => `translate(${d.x0},${d.y0})`);
+            const color = d3.scaleSequential(d3.interpolateTurbo)
+                .domain([0, root.leaves().length]);
 
-    nodes.append("rect")
-        .attr("width", d => d.x1 - d.x0)
-        .attr("height", d => d.y1 - d.y0)
-        .attr("fill", (d, i) => color(i));
+            const nodes = svg.selectAll(".node")
+                .data(root.leaves())
+                .enter()
+                .append("g")
+                .attr("class", "node")
+                .attr("transform", d => `translate(${d.x0},${d.y0})`);
 
-    nodes.append("text")
-        .attr("x", 4)
-        .attr("y", 20)
-        .attr("fill", "white")
-        .attr("font-weight", "bold")
-        .attr("font-size", "14px")
-        .text(d => `${d.data.key}: ${d.data.value.toFixed(2)}`)
-        .call(wrap,  d => d.x1 - d.x0 - 8);
+            nodes.append("rect")
+                .attr("width", d => d.x1 - d.x0)
+                .attr("height", d => d.y1 - d.y0)
+                .attr("fill", (d, i) => color(i));
 
-    // Function to wrap text within box clearly:
-    function wrap(text, width) {
-        text.each(function() {
-            const text = d3.select(this),
-                words = text.text().split(/\s+/).reverse(),
-                lineHeight = 1.2, // ems
-                y = text.attr("y"),
-                dy = 0,
-                x = text.attr("x");
-            
-            let word,
-                line = [],
-                lineNumber = 0,
-                tspan = text.text(null).append("tspan").attr("x", x).attr("y", y).attr("dy", dy + "em");
-            
-            while (word = words.pop()) {
-                line.push(word);
-                tspan.text(line.join(" "));
-                if (tspan.node().getComputedTextLength() > width) {
-                    line.pop();
-                    tspan.text(line.join(" "));
-                    line = [word];
-                    tspan = text.append("tspan")
-                        .attr("x", x)
-                        .attr("y", y)
-                        .attr("dy", ++lineNumber * lineHeight + dy + "em")
-                        .text(word);
-                }
+            nodes.append("text")
+                .attr("x", 4)
+                .attr("y", 20)
+                .attr("fill", "white")
+                .attr("font-weight", "bold")
+                .attr("font-size", "14px")
+                .text(d => `${d.data.key}: ${(100 * d.data.value / totalSaliency).toFixed(1)}%`)
+                .call(wrap,  d => d.x1 - d.x0 - 8);
+
+            function wrap(text, width) {
+                text.each(function() {
+                    const text = d3.select(this),
+                        words = text.text().split(/\s+/).reverse(),
+                        lineHeight = 1.2,
+                        y = text.attr("y"),
+                        dy = 0,
+                        x = text.attr("x");
+                    
+                    let word,
+                        line = [],
+                        lineNumber = 0,
+                        tspan = text.text(null).append("tspan").attr("x", x).attr("y", y).attr("dy", dy + "em");
+                    
+                    while (word = words.pop()) {
+                        line.push(word);
+                        tspan.text(line.join(" "));
+                        if (tspan.node().getComputedTextLength() > width) {
+                            line.pop();
+                            tspan.text(line.join(" "));
+                            line = [word];
+                            tspan = text.append("tspan")
+                                .attr("x", x)
+                                .attr("y", y)
+                                .attr("dy", ++lineNumber * lineHeight + dy + "em")
+                                .text(word);
+                        }
+                    }
+                });
             }
-        });
-    }
-}
+        }
 
     </script>
 </body>
