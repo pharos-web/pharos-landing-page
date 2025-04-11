@@ -41,10 +41,11 @@
 
     <script>
         const svg = d3.select("svg"),
-              margin = {top: 60, right: 150, bottom: 60, left: 70},
-              width = +svg.attr("width") - margin.left - margin.right,
-              height = +svg.attr("height") - margin.top - margin.bottom,
-              g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+            margin = {top: 60, right: 120, bottom: 100, left: 80},
+            width = +svg.attr("width") - margin.left - margin.right,
+            height = +svg.attr("height") - margin.top - margin.bottom,
+            g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
 
         const parseDate = d3.timeParse("%Y-%m-%d");
         const color = d3.scaleOrdinal()
@@ -61,7 +62,7 @@
             });
         };
 
-        d3.json("https://github.com/pharos-web/pharos-landing-page/blob/main/charts/economic_topics/inflation_index.json").then(data => {
+        d3.json("../../../data/processed/inflation_index_alt.json").then(data => {
             data = data.filter(d => d.date.startsWith("2025"));
             data.forEach(d => {
                 d.date = parseDate(d.date);
@@ -83,7 +84,7 @@
                 .range([0, width]);
 
             const y = d3.scaleLinear()
-                .domain([0, 100])
+                .domain([0, 50])
                 .range([height, 0]);
 
             g.append("g")
@@ -108,9 +109,9 @@
 
             svg.append("text")
                 .attr("fill", "black")
-                .attr("transform", `translate(20, ${margin.top + height / 2}) rotate(-90)`)
+                .attr("transform", `translate(30, ${margin.top + height / 2}) rotate(-90)`)
                 .attr("text-anchor", "middle")
-                .text("Topic saliency index");
+                .text("Topic saliency in economic news (%)");
 
             series.forEach(s => {
                 const raw = data.map(d => ({date: d.date, value: d[s.key]}));
@@ -127,25 +128,28 @@
 
             const legend = svg.append("g")
                 .attr("class", "legend")
-                .attr("transform", `translate(${margin.left + width + 20}, ${margin.top})`);
+                .attr("transform", `translate(${(width / 2) + margin.left}, ${height + margin.top + 60})`)
+                .attr("text-anchor", "middle");
 
             series.forEach((s, i) => {
-                const yOffset = i * 20;
+                const xOffset = (i - (series.length - 1) / 2) * 180;
                 legend.append("rect")
-                    .attr("x", 0)
-                    .attr("y", yOffset)
+                    .attr("x", xOffset - 10)
+                    .attr("y", 0)
                     .attr("width", 12)
                     .attr("height", 12)
                     .attr("fill", color(s.label));
 
                 legend.append("text")
-                    .attr("x", 18)
-                    .attr("y", yOffset + 10)
+                    .attr("x", xOffset + 0)
+                    .attr("y", 30)
                     .text(s.label)
                     .attr("fill", "black")
                     .style("font-family", "Inter")
                     .style("alignment-baseline", "middle");
             });
+
+
         });
     </script>
 </body>
