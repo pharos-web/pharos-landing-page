@@ -1261,32 +1261,372 @@
   },
   {
     "date": "2025-05-15",
-    "fear": 597,
-    "concern": 3379,
-    "confidence": 2505,
-    "optimism": 1507,
-    "anger": 142,
-    "relief": 584,
-    "mood_index": 0.0549
+    "fear": 20,
+    "concern": 97,
+    "confidence": 102,
+    "optimism": 65,
+    "anger": 9,
+    "relief": 19,
+    "mood_index": 0.1923
   },
   {
     "date": "2025-05-16",
-    "fear": 644,
-    "concern": 2782,
-    "confidence": 2044,
-    "optimism": 1240,
-    "anger": 151,
-    "relief": 649,
-    "mood_index": 0.0474
+    "fear": 38,
+    "concern": 187,
+    "confidence": 168,
+    "optimism": 100,
+    "anger": 15,
+    "relief": 47,
+    "mood_index": 0.1351
   },
   {
     "date": "2025-05-17",
-    "fear": 228,
-    "concern": 1087,
-    "confidence": 707,
-    "optimism": 391,
-    "anger": 145,
-    "relief": 222,
-    "mood_index": -0.0504
+    "fear": 26,
+    "concern": 136,
+    "confidence": 123,
+    "optimism": 79,
+    "anger": 21,
+    "relief": 37,
+    "mood_index": 0.1327
+  },
+  {
+    "date": "2025-05-18",
+    "fear": 187,
+    "concern": 914,
+    "confidence": 558,
+    "optimism": 360,
+    "anger": 158,
+    "relief": 178,
+    "mood_index": -0.0692
+  },
+  {
+    "date": "2025-05-19",
+    "fear": 495,
+    "concern": 2987,
+    "confidence": 2035,
+    "optimism": 1213,
+    "anger": 201,
+    "relief": 596,
+    "mood_index": 0.0214
+  },
+  {
+    "date": "2025-05-20",
+    "fear": 480,
+    "concern": 3274,
+    "confidence": 2269,
+    "optimism": 1321,
+    "anger": 191,
+    "relief": 683,
+    "mood_index": 0.0399
+  },
+  {
+    "date": "2025-05-21",
+    "fear": 583,
+    "concern": 3334,
+    "confidence": 2221,
+    "optimism": 1219,
+    "anger": 238,
+    "relief": 612,
+    "mood_index": -0.0126
+  },
+  {
+    "date": "2025-05-22",
+    "fear": 475,
+    "concern": 2831,
+    "confidence": 2093,
+    "optimism": 959,
+    "anger": 165,
+    "relief": 490,
+    "mood_index": 0.0101
+  },
+  {
+    "date": "2025-05-23",
+    "fear": 0,
+    "concern": 18,
+    "confidence": 10,
+    "optimism": 9,
+    "anger": 0,
+    "relief": 5,
+    "mood_index": 0.1429
+  },
+  {
+    "date": "2025-05-24",
+    "fear": 1,
+    "concern": 11,
+    "confidence": 7,
+    "optimism": 3,
+    "anger": 1,
+    "relief": 2,
+    "mood_index": -0.04
+  },
+  {
+    "date": "2025-05-25",
+    "fear": 2,
+    "concern": 28,
+    "confidence": 20,
+    "optimism": 10,
+    "anger": 0,
+    "relief": 5,
+    "mood_index": 0.0769
+  },
+  {
+    "date": "2025-05-26",
+    "fear": 251,
+    "concern": 1681,
+    "confidence": 1090,
+    "optimism": 544,
+    "anger": 95,
+    "relief": 309,
+    "mood_index": -0.0212
+  },
+  {
+    "date": "2025-05-27",
+    "fear": 473,
+    "concern": 2490,
+    "confidence": 1740,
+    "optimism": 903,
+    "anger": 143,
+    "relief": 496,
+    "mood_index": 0.0053
+  },
+  {
+    "date": "2025-05-28",
+    "fear": 388,
+    "concern": 2957,
+    "confidence": 2217,
+    "optimism": 1106,
+    "anger": 129,
+    "relief": 566,
+    "mood_index": 0.0564
+  },
+  {
+    "date": "2025-05-29",
+    "fear": 0,
+    "concern": 2,
+    "confidence": 2,
+    "optimism": 0,
+    "anger": 0,
+    "relief": 1,
+    "mood_index": 0.2
+  },
+  {
+    "date": "2025-05-30",
+    "fear": 1,
+    "concern": 30,
+    "confidence": 25,
+    "optimism": 10,
+    "anger": 1,
+    "relief": 0,
+    "mood_index": 0.0448
+  },
+  {
+    "date": "2025-05-31",
+    "fear": 10,
+    "concern": 23,
+    "confidence": 17,
+    "optimism": 8,
+    "anger": 2,
+    "relief": 3,
+    "mood_index": -0.1111
+  },
+  {
+    "date": "2025-06-01",
+    "fear": 142,
+    "concern": 758,
+    "confidence": 460,
+    "optimism": 266,
+    "anger": 40,
+    "relief": 161,
+    "mood_index": -0.029
+  },
+  {
+    "date": "2025-06-02",
+    "fear": 325,
+    "concern": 2459,
+    "confidence": 1780,
+    "optimism": 853,
+    "anger": 151,
+    "relief": 500,
+    "mood_index": 0.0326
+  },
+  {
+    "date": "2025-06-03",
+    "fear": 287,
+    "concern": 2834,
+    "confidence": 1986,
+    "optimism": 1144,
+    "anger": 146,
+    "relief": 472,
+    "mood_index": 0.0488
+  },
+  {
+    "date": "2025-06-04",
+    "fear": 462,
+    "concern": 3121,
+    "confidence": 2314,
+    "optimism": 1300,
+    "anger": 246,
+    "relief": 578,
+    "mood_index": 0.0453
+  },
+  {
+    "date": "2025-06-05",
+    "fear": 560,
+    "concern": 3508,
+    "confidence": 2542,
+    "optimism": 1398,
+    "anger": 248,
+    "relief": 702,
+    "mood_index": 0.0364
+  },
+  {
+    "date": "2025-06-06",
+    "fear": 2,
+    "concern": 24,
+    "confidence": 16,
+    "optimism": 10,
+    "anger": 0,
+    "relief": 3,
+    "mood_index": 0.0545
+  },
+  {
+    "date": "2025-06-07",
+    "fear": 9,
+    "concern": 27,
+    "confidence": 26,
+    "optimism": 17,
+    "anger": 9,
+    "relief": 13,
+    "mood_index": 0.1089
+  },
+  {
+    "date": "2025-06-08",
+    "fear": 14,
+    "concern": 38,
+    "confidence": 34,
+    "optimism": 26,
+    "anger": 5,
+    "relief": 12,
+    "mood_index": 0.1163
+  },
+  {
+    "date": "2025-06-09",
+    "fear": 369,
+    "concern": 2456,
+    "confidence": 1790,
+    "optimism": 1059,
+    "anger": 157,
+    "relief": 628,
+    "mood_index": 0.0766
+  },
+  {
+    "date": "2025-06-10",
+    "fear": 437,
+    "concern": 2360,
+    "confidence": 1978,
+    "optimism": 1035,
+    "anger": 167,
+    "relief": 573,
+    "mood_index": 0.095
+  },
+  {
+    "date": "2025-06-11",
+    "fear": 439,
+    "concern": 3353,
+    "confidence": 2244,
+    "optimism": 1284,
+    "anger": 216,
+    "relief": 752,
+    "mood_index": 0.0328
+  },
+  {
+    "date": "2025-06-12",
+    "fear": 469,
+    "concern": 3262,
+    "confidence": 2417,
+    "optimism": 1206,
+    "anger": 184,
+    "relief": 632,
+    "mood_index": 0.0416
+  },
+  {
+    "date": "2025-06-13",
+    "fear": 643,
+    "concern": 2678,
+    "confidence": 1762,
+    "optimism": 892,
+    "anger": 131,
+    "relief": 466,
+    "mood_index": -0.0505
+  },
+  {
+    "date": "2025-06-14",
+    "fear": 0,
+    "concern": 0,
+    "confidence": 1,
+    "optimism": 0,
+    "anger": 0,
+    "relief": 0,
+    "mood_index": 1.0
+  },
+  {
+    "date": "2025-06-15",
+    "fear": 165,
+    "concern": 587,
+    "confidence": 416,
+    "optimism": 233,
+    "anger": 41,
+    "relief": 134,
+    "mood_index": -0.0063
+  },
+  {
+    "date": "2025-06-16",
+    "fear": 33,
+    "concern": 158,
+    "confidence": 129,
+    "optimism": 84,
+    "anger": 15,
+    "relief": 51,
+    "mood_index": 0.1234
+  },
+  {
+    "date": "2025-06-17",
+    "fear": 454,
+    "concern": 2970,
+    "confidence": 2116,
+    "optimism": 1193,
+    "anger": 149,
+    "relief": 524,
+    "mood_index": 0.0351
+  },
+  {
+    "date": "2025-06-18",
+    "fear": 711,
+    "concern": 4166,
+    "confidence": 2478,
+    "optimism": 1314,
+    "anger": 121,
+    "relief": 545,
+    "mood_index": -0.0708
+  },
+  {
+    "date": "2025-06-19",
+    "fear": 496,
+    "concern": 3030,
+    "confidence": 1842,
+    "optimism": 910,
+    "anger": 130,
+    "relief": 428,
+    "mood_index": -0.0696
+  },
+  {
+    "date": "2025-06-20",
+    "fear": 612,
+    "concern": 2839,
+    "confidence": 1867,
+    "optimism": 1031,
+    "anger": 143,
+    "relief": 548,
+    "mood_index": -0.021
   }
 ]
