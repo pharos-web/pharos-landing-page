@@ -15689,23 +15689,23 @@
   {
     "date": "2025-06-19",
     "category": "clothing",
-    "count": 562,
-    "total_articles": 3538,
-    "saliency": 0.1588
+    "count": 1,
+    "total_articles": 3,
+    "saliency": 0.3333
   },
   {
     "date": "2025-06-19",
     "category": "education",
-    "count": 715,
-    "total_articles": 3538,
-    "saliency": 0.2021
+    "count": 1,
+    "total_articles": 3,
+    "saliency": 0.3333
   },
   {
     "date": "2025-06-19",
     "category": "energy",
-    "count": 1729,
-    "total_articles": 3538,
-    "saliency": 0.4887
+    "count": 1,
+    "total_articles": 3,
+    "saliency": 0.3333
   },
   {
     "date": "2025-06-19",
@@ -15717,9 +15717,9 @@
   {
     "date": "2025-06-19",
     "category": "food",
-    "count": 812,
-    "total_articles": 3538,
-    "saliency": 0.2295
+    "count": 1,
+    "total_articles": 3,
+    "saliency": 0.3333
   },
   {
     "date": "2025-06-19",
@@ -15731,9 +15731,9 @@
   {
     "date": "2025-06-19",
     "category": "housing",
-    "count": 696,
-    "total_articles": 3538,
-    "saliency": 0.1967
+    "count": 1,
+    "total_articles": 3,
+    "saliency": 0.3333
   },
   {
     "date": "2025-06-19",
@@ -15773,9 +15773,9 @@
   {
     "date": "2025-06-19",
     "category": "travel & leisure",
-    "count": 459,
-    "total_articles": 3538,
-    "saliency": 0.1297
+    "count": 1,
+    "total_articles": 3,
+    "saliency": 0.3333
   },
   {
     "date": "2025-06-20",
@@ -15787,58 +15787,58 @@
   {
     "date": "2025-06-20",
     "category": "clothing",
-    "count": 916,
-    "total_articles": 3719,
-    "saliency": 0.2463
+    "count": 5,
+    "total_articles": 17,
+    "saliency": 0.2941
   },
   {
     "date": "2025-06-20",
     "category": "education",
-    "count": 965,
-    "total_articles": 3719,
-    "saliency": 0.2595
+    "count": 2,
+    "total_articles": 17,
+    "saliency": 0.1176
   },
   {
     "date": "2025-06-20",
     "category": "energy",
-    "count": 2034,
-    "total_articles": 3719,
-    "saliency": 0.5469
+    "count": 10,
+    "total_articles": 17,
+    "saliency": 0.5882
   },
   {
     "date": "2025-06-20",
     "category": "entertainment",
-    "count": 563,
-    "total_articles": 3719,
-    "saliency": 0.1514
+    "count": 1,
+    "total_articles": 17,
+    "saliency": 0.0588
   },
   {
     "date": "2025-06-20",
     "category": "food",
-    "count": 1202,
-    "total_articles": 3719,
-    "saliency": 0.3232
+    "count": 5,
+    "total_articles": 17,
+    "saliency": 0.2941
   },
   {
     "date": "2025-06-20",
     "category": "healthcare",
-    "count": 1038,
-    "total_articles": 3719,
-    "saliency": 0.2791
+    "count": 4,
+    "total_articles": 17,
+    "saliency": 0.2353
   },
   {
     "date": "2025-06-20",
     "category": "housing",
-    "count": 912,
-    "total_articles": 3719,
-    "saliency": 0.2452
+    "count": 5,
+    "total_articles": 17,
+    "saliency": 0.2941
   },
   {
     "date": "2025-06-20",
     "category": "insurance",
-    "count": 460,
-    "total_articles": 3719,
-    "saliency": 0.1237
+    "count": 2,
+    "total_articles": 17,
+    "saliency": 0.1176
   },
   {
     "date": "2025-06-20",
@@ -15850,29 +15850,3361 @@
   {
     "date": "2025-06-20",
     "category": "technology",
-    "count": 895,
-    "total_articles": 3719,
-    "saliency": 0.2407
+    "count": 3,
+    "total_articles": 17,
+    "saliency": 0.1765
   },
   {
     "date": "2025-06-20",
     "category": "telecom",
-    "count": 409,
-    "total_articles": 3719,
-    "saliency": 0.11
+    "count": 4,
+    "total_articles": 17,
+    "saliency": 0.2353
   },
   {
     "date": "2025-06-20",
     "category": "transportation",
-    "count": 819,
-    "total_articles": 3719,
-    "saliency": 0.2202
+    "count": 3,
+    "total_articles": 17,
+    "saliency": 0.1765
   },
   {
     "date": "2025-06-20",
     "category": "travel & leisure",
-    "count": 584,
-    "total_articles": 3719,
-    "saliency": 0.157
+    "count": 1,
+    "total_articles": 13,
+    "saliency": 0.0769
+  },
+  {
+    "date": "2025-06-21",
+    "category": "childcare",
+    "count": 5,
+    "total_articles": 70,
+    "saliency": 0.0714
+  },
+  {
+    "date": "2025-06-21",
+    "category": "clothing",
+    "count": 1,
+    "total_articles": 3,
+    "saliency": 0.3333
+  },
+  {
+    "date": "2025-06-21",
+    "category": "education",
+    "count": 2,
+    "total_articles": 3,
+    "saliency": 0.6667
+  },
+  {
+    "date": "2025-06-21",
+    "category": "energy",
+    "count": 3,
+    "total_articles": 3,
+    "saliency": 1.0
+  },
+  {
+    "date": "2025-06-21",
+    "category": "entertainment",
+    "count": 1,
+    "total_articles": 3,
+    "saliency": 0.3333
+  },
+  {
+    "date": "2025-06-21",
+    "category": "food",
+    "count": 2,
+    "total_articles": 3,
+    "saliency": 0.6667
+  },
+  {
+    "date": "2025-06-21",
+    "category": "healthcare",
+    "count": 1,
+    "total_articles": 3,
+    "saliency": 0.3333
+  },
+  {
+    "date": "2025-06-21",
+    "category": "housing",
+    "count": 29,
+    "total_articles": 70,
+    "saliency": 0.4143
+  },
+  {
+    "date": "2025-06-21",
+    "category": "insurance",
+    "count": 19,
+    "total_articles": 70,
+    "saliency": 0.2714
+  },
+  {
+    "date": "2025-06-21",
+    "category": "personal care",
+    "count": 1,
+    "total_articles": 3,
+    "saliency": 0.3333
+  },
+  {
+    "date": "2025-06-21",
+    "category": "technology",
+    "count": 1,
+    "total_articles": 3,
+    "saliency": 0.3333
+  },
+  {
+    "date": "2025-06-21",
+    "category": "telecom",
+    "count": 35,
+    "total_articles": 70,
+    "saliency": 0.5
+  },
+  {
+    "date": "2025-06-21",
+    "category": "transportation",
+    "count": 1,
+    "total_articles": 3,
+    "saliency": 0.3333
+  },
+  {
+    "date": "2025-06-21",
+    "category": "travel & leisure",
+    "count": 1,
+    "total_articles": 3,
+    "saliency": 0.3333
+  },
+  {
+    "date": "2025-06-22",
+    "category": "childcare",
+    "count": 27,
+    "total_articles": 698,
+    "saliency": 0.0387
+  },
+  {
+    "date": "2025-06-22",
+    "category": "clothing",
+    "count": 9,
+    "total_articles": 32,
+    "saliency": 0.2812
+  },
+  {
+    "date": "2025-06-22",
+    "category": "education",
+    "count": 14,
+    "total_articles": 32,
+    "saliency": 0.4375
+  },
+  {
+    "date": "2025-06-22",
+    "category": "energy",
+    "count": 23,
+    "total_articles": 32,
+    "saliency": 0.7188
+  },
+  {
+    "date": "2025-06-22",
+    "category": "entertainment",
+    "count": 6,
+    "total_articles": 32,
+    "saliency": 0.1875
+  },
+  {
+    "date": "2025-06-22",
+    "category": "food",
+    "count": 14,
+    "total_articles": 32,
+    "saliency": 0.4375
+  },
+  {
+    "date": "2025-06-22",
+    "category": "healthcare",
+    "count": 12,
+    "total_articles": 32,
+    "saliency": 0.375
+  },
+  {
+    "date": "2025-06-22",
+    "category": "housing",
+    "count": 14,
+    "total_articles": 32,
+    "saliency": 0.4375
+  },
+  {
+    "date": "2025-06-22",
+    "category": "insurance",
+    "count": 4,
+    "total_articles": 32,
+    "saliency": 0.125
+  },
+  {
+    "date": "2025-06-22",
+    "category": "personal care",
+    "count": 7,
+    "total_articles": 32,
+    "saliency": 0.2188
+  },
+  {
+    "date": "2025-06-22",
+    "category": "technology",
+    "count": 15,
+    "total_articles": 32,
+    "saliency": 0.4688
+  },
+  {
+    "date": "2025-06-22",
+    "category": "telecom",
+    "count": 4,
+    "total_articles": 32,
+    "saliency": 0.125
+  },
+  {
+    "date": "2025-06-22",
+    "category": "transportation",
+    "count": 9,
+    "total_articles": 32,
+    "saliency": 0.2812
+  },
+  {
+    "date": "2025-06-22",
+    "category": "travel & leisure",
+    "count": 7,
+    "total_articles": 32,
+    "saliency": 0.2188
+  },
+  {
+    "date": "2025-06-23",
+    "category": "childcare",
+    "count": 29,
+    "total_articles": 1942,
+    "saliency": 0.0149
+  },
+  {
+    "date": "2025-06-23",
+    "category": "clothing",
+    "count": 15,
+    "total_articles": 92,
+    "saliency": 0.163
+  },
+  {
+    "date": "2025-06-23",
+    "category": "education",
+    "count": 19,
+    "total_articles": 92,
+    "saliency": 0.2065
+  },
+  {
+    "date": "2025-06-23",
+    "category": "energy",
+    "count": 56,
+    "total_articles": 92,
+    "saliency": 0.6087
+  },
+  {
+    "date": "2025-06-23",
+    "category": "entertainment",
+    "count": 9,
+    "total_articles": 92,
+    "saliency": 0.0978
+  },
+  {
+    "date": "2025-06-23",
+    "category": "food",
+    "count": 20,
+    "total_articles": 92,
+    "saliency": 0.2174
+  },
+  {
+    "date": "2025-06-23",
+    "category": "healthcare",
+    "count": 24,
+    "total_articles": 92,
+    "saliency": 0.2609
+  },
+  {
+    "date": "2025-06-23",
+    "category": "housing",
+    "count": 26,
+    "total_articles": 92,
+    "saliency": 0.2826
+  },
+  {
+    "date": "2025-06-23",
+    "category": "insurance",
+    "count": 13,
+    "total_articles": 92,
+    "saliency": 0.1413
+  },
+  {
+    "date": "2025-06-23",
+    "category": "personal care",
+    "count": 5,
+    "total_articles": 92,
+    "saliency": 0.0543
+  },
+  {
+    "date": "2025-06-23",
+    "category": "technology",
+    "count": 20,
+    "total_articles": 92,
+    "saliency": 0.2174
+  },
+  {
+    "date": "2025-06-23",
+    "category": "telecom",
+    "count": 6,
+    "total_articles": 92,
+    "saliency": 0.0652
+  },
+  {
+    "date": "2025-06-23",
+    "category": "transportation",
+    "count": 23,
+    "total_articles": 92,
+    "saliency": 0.25
+  },
+  {
+    "date": "2025-06-23",
+    "category": "travel & leisure",
+    "count": 14,
+    "total_articles": 92,
+    "saliency": 0.1522
+  },
+  {
+    "date": "2025-06-24",
+    "category": "childcare",
+    "count": 3,
+    "total_articles": 92,
+    "saliency": 0.0326
+  },
+  {
+    "date": "2025-06-24",
+    "category": "clothing",
+    "count": 18,
+    "total_articles": 92,
+    "saliency": 0.1957
+  },
+  {
+    "date": "2025-06-24",
+    "category": "education",
+    "count": 14,
+    "total_articles": 92,
+    "saliency": 0.1522
+  },
+  {
+    "date": "2025-06-24",
+    "category": "energy",
+    "count": 49,
+    "total_articles": 92,
+    "saliency": 0.5326
+  },
+  {
+    "date": "2025-06-24",
+    "category": "entertainment",
+    "count": 6,
+    "total_articles": 92,
+    "saliency": 0.0652
+  },
+  {
+    "date": "2025-06-24",
+    "category": "food",
+    "count": 20,
+    "total_articles": 92,
+    "saliency": 0.2174
+  },
+  {
+    "date": "2025-06-24",
+    "category": "healthcare",
+    "count": 20,
+    "total_articles": 92,
+    "saliency": 0.2174
+  },
+  {
+    "date": "2025-06-24",
+    "category": "housing",
+    "count": 20,
+    "total_articles": 92,
+    "saliency": 0.2174
+  },
+  {
+    "date": "2025-06-24",
+    "category": "insurance",
+    "count": 10,
+    "total_articles": 92,
+    "saliency": 0.1087
+  },
+  {
+    "date": "2025-06-24",
+    "category": "personal care",
+    "count": 7,
+    "total_articles": 92,
+    "saliency": 0.0761
+  },
+  {
+    "date": "2025-06-24",
+    "category": "technology",
+    "count": 13,
+    "total_articles": 92,
+    "saliency": 0.1413
+  },
+  {
+    "date": "2025-06-24",
+    "category": "telecom",
+    "count": 5,
+    "total_articles": 92,
+    "saliency": 0.0543
+  },
+  {
+    "date": "2025-06-24",
+    "category": "transportation",
+    "count": 17,
+    "total_articles": 92,
+    "saliency": 0.1848
+  },
+  {
+    "date": "2025-06-24",
+    "category": "travel & leisure",
+    "count": 13,
+    "total_articles": 92,
+    "saliency": 0.1413
+  },
+  {
+    "date": "2025-06-25",
+    "category": "childcare",
+    "count": 2,
+    "total_articles": 80,
+    "saliency": 0.025
+  },
+  {
+    "date": "2025-06-25",
+    "category": "clothing",
+    "count": 15,
+    "total_articles": 80,
+    "saliency": 0.1875
+  },
+  {
+    "date": "2025-06-25",
+    "category": "education",
+    "count": 10,
+    "total_articles": 80,
+    "saliency": 0.125
+  },
+  {
+    "date": "2025-06-25",
+    "category": "energy",
+    "count": 36,
+    "total_articles": 80,
+    "saliency": 0.45
+  },
+  {
+    "date": "2025-06-25",
+    "category": "entertainment",
+    "count": 8,
+    "total_articles": 80,
+    "saliency": 0.1
+  },
+  {
+    "date": "2025-06-25",
+    "category": "food",
+    "count": 15,
+    "total_articles": 80,
+    "saliency": 0.1875
+  },
+  {
+    "date": "2025-06-25",
+    "category": "healthcare",
+    "count": 20,
+    "total_articles": 80,
+    "saliency": 0.25
+  },
+  {
+    "date": "2025-06-25",
+    "category": "housing",
+    "count": 25,
+    "total_articles": 80,
+    "saliency": 0.3125
+  },
+  {
+    "date": "2025-06-25",
+    "category": "insurance",
+    "count": 11,
+    "total_articles": 80,
+    "saliency": 0.1375
+  },
+  {
+    "date": "2025-06-25",
+    "category": "personal care",
+    "count": 2,
+    "total_articles": 80,
+    "saliency": 0.025
+  },
+  {
+    "date": "2025-06-25",
+    "category": "technology",
+    "count": 15,
+    "total_articles": 80,
+    "saliency": 0.1875
+  },
+  {
+    "date": "2025-06-25",
+    "category": "telecom",
+    "count": 2,
+    "total_articles": 80,
+    "saliency": 0.025
+  },
+  {
+    "date": "2025-06-25",
+    "category": "transportation",
+    "count": 18,
+    "total_articles": 80,
+    "saliency": 0.225
+  },
+  {
+    "date": "2025-06-25",
+    "category": "travel & leisure",
+    "count": 14,
+    "total_articles": 80,
+    "saliency": 0.175
+  },
+  {
+    "date": "2025-06-26",
+    "category": "childcare",
+    "count": 1,
+    "total_articles": 85,
+    "saliency": 0.0118
+  },
+  {
+    "date": "2025-06-26",
+    "category": "clothing",
+    "count": 16,
+    "total_articles": 85,
+    "saliency": 0.1882
+  },
+  {
+    "date": "2025-06-26",
+    "category": "education",
+    "count": 14,
+    "total_articles": 85,
+    "saliency": 0.1647
+  },
+  {
+    "date": "2025-06-26",
+    "category": "energy",
+    "count": 39,
+    "total_articles": 85,
+    "saliency": 0.4588
+  },
+  {
+    "date": "2025-06-26",
+    "category": "entertainment",
+    "count": 4,
+    "total_articles": 85,
+    "saliency": 0.0471
+  },
+  {
+    "date": "2025-06-26",
+    "category": "food",
+    "count": 17,
+    "total_articles": 85,
+    "saliency": 0.2
+  },
+  {
+    "date": "2025-06-26",
+    "category": "healthcare",
+    "count": 20,
+    "total_articles": 85,
+    "saliency": 0.2353
+  },
+  {
+    "date": "2025-06-26",
+    "category": "housing",
+    "count": 25,
+    "total_articles": 85,
+    "saliency": 0.2941
+  },
+  {
+    "date": "2025-06-26",
+    "category": "insurance",
+    "count": 12,
+    "total_articles": 85,
+    "saliency": 0.1412
+  },
+  {
+    "date": "2025-06-26",
+    "category": "personal care",
+    "count": 6,
+    "total_articles": 85,
+    "saliency": 0.0706
+  },
+  {
+    "date": "2025-06-26",
+    "category": "technology",
+    "count": 15,
+    "total_articles": 85,
+    "saliency": 0.1765
+  },
+  {
+    "date": "2025-06-26",
+    "category": "telecom",
+    "count": 6,
+    "total_articles": 85,
+    "saliency": 0.0706
+  },
+  {
+    "date": "2025-06-26",
+    "category": "transportation",
+    "count": 12,
+    "total_articles": 85,
+    "saliency": 0.1412
+  },
+  {
+    "date": "2025-06-26",
+    "category": "travel & leisure",
+    "count": 10,
+    "total_articles": 85,
+    "saliency": 0.1176
+  },
+  {
+    "date": "2025-06-27",
+    "category": "childcare",
+    "count": 30,
+    "total_articles": 1959,
+    "saliency": 0.0153
+  },
+  {
+    "date": "2025-06-27",
+    "category": "clothing",
+    "count": 16,
+    "total_articles": 73,
+    "saliency": 0.2192
+  },
+  {
+    "date": "2025-06-27",
+    "category": "education",
+    "count": 12,
+    "total_articles": 73,
+    "saliency": 0.1644
+  },
+  {
+    "date": "2025-06-27",
+    "category": "energy",
+    "count": 34,
+    "total_articles": 73,
+    "saliency": 0.4658
+  },
+  {
+    "date": "2025-06-27",
+    "category": "entertainment",
+    "count": 5,
+    "total_articles": 73,
+    "saliency": 0.0685
+  },
+  {
+    "date": "2025-06-27",
+    "category": "food",
+    "count": 24,
+    "total_articles": 73,
+    "saliency": 0.3288
+  },
+  {
+    "date": "2025-06-27",
+    "category": "healthcare",
+    "count": 12,
+    "total_articles": 73,
+    "saliency": 0.1644
+  },
+  {
+    "date": "2025-06-27",
+    "category": "housing",
+    "count": 12,
+    "total_articles": 73,
+    "saliency": 0.1644
+  },
+  {
+    "date": "2025-06-27",
+    "category": "insurance",
+    "count": 6,
+    "total_articles": 73,
+    "saliency": 0.0822
+  },
+  {
+    "date": "2025-06-27",
+    "category": "personal care",
+    "count": 1,
+    "total_articles": 73,
+    "saliency": 0.0137
+  },
+  {
+    "date": "2025-06-27",
+    "category": "technology",
+    "count": 20,
+    "total_articles": 73,
+    "saliency": 0.274
+  },
+  {
+    "date": "2025-06-27",
+    "category": "telecom",
+    "count": 3,
+    "total_articles": 73,
+    "saliency": 0.0411
+  },
+  {
+    "date": "2025-06-27",
+    "category": "transportation",
+    "count": 12,
+    "total_articles": 73,
+    "saliency": 0.1644
+  },
+  {
+    "date": "2025-06-27",
+    "category": "travel & leisure",
+    "count": 13,
+    "total_articles": 73,
+    "saliency": 0.1781
+  },
+  {
+    "date": "2025-06-28",
+    "category": "childcare",
+    "count": 19,
+    "total_articles": 615,
+    "saliency": 0.0309
+  },
+  {
+    "date": "2025-06-28",
+    "category": "clothing",
+    "count": 2,
+    "total_articles": 28,
+    "saliency": 0.0714
+  },
+  {
+    "date": "2025-06-28",
+    "category": "education",
+    "count": 6,
+    "total_articles": 28,
+    "saliency": 0.2143
+  },
+  {
+    "date": "2025-06-28",
+    "category": "energy",
+    "count": 11,
+    "total_articles": 28,
+    "saliency": 0.3929
+  },
+  {
+    "date": "2025-06-28",
+    "category": "entertainment",
+    "count": 69,
+    "total_articles": 615,
+    "saliency": 0.1122
+  },
+  {
+    "date": "2025-06-28",
+    "category": "food",
+    "count": 3,
+    "total_articles": 28,
+    "saliency": 0.1071
+  },
+  {
+    "date": "2025-06-28",
+    "category": "healthcare",
+    "count": 3,
+    "total_articles": 28,
+    "saliency": 0.1071
+  },
+  {
+    "date": "2025-06-28",
+    "category": "housing",
+    "count": 8,
+    "total_articles": 28,
+    "saliency": 0.2857
+  },
+  {
+    "date": "2025-06-28",
+    "category": "insurance",
+    "count": 1,
+    "total_articles": 28,
+    "saliency": 0.0357
+  },
+  {
+    "date": "2025-06-28",
+    "category": "personal care",
+    "count": 1,
+    "total_articles": 28,
+    "saliency": 0.0357
+  },
+  {
+    "date": "2025-06-28",
+    "category": "technology",
+    "count": 5,
+    "total_articles": 28,
+    "saliency": 0.1786
+  },
+  {
+    "date": "2025-06-28",
+    "category": "telecom",
+    "count": 2,
+    "total_articles": 28,
+    "saliency": 0.0714
+  },
+  {
+    "date": "2025-06-28",
+    "category": "transportation",
+    "count": 5,
+    "total_articles": 28,
+    "saliency": 0.1786
+  },
+  {
+    "date": "2025-06-28",
+    "category": "travel & leisure",
+    "count": 4,
+    "total_articles": 28,
+    "saliency": 0.1429
+  },
+  {
+    "date": "2025-06-29",
+    "category": "childcare",
+    "count": 15,
+    "total_articles": 495,
+    "saliency": 0.0303
+  },
+  {
+    "date": "2025-06-29",
+    "category": "clothing",
+    "count": 2,
+    "total_articles": 18,
+    "saliency": 0.1111
+  },
+  {
+    "date": "2025-06-29",
+    "category": "education",
+    "count": 7,
+    "total_articles": 18,
+    "saliency": 0.3889
+  },
+  {
+    "date": "2025-06-29",
+    "category": "energy",
+    "count": 11,
+    "total_articles": 18,
+    "saliency": 0.6111
+  },
+  {
+    "date": "2025-06-29",
+    "category": "entertainment",
+    "count": 1,
+    "total_articles": 18,
+    "saliency": 0.0556
+  },
+  {
+    "date": "2025-06-29",
+    "category": "food",
+    "count": 6,
+    "total_articles": 18,
+    "saliency": 0.3333
+  },
+  {
+    "date": "2025-06-29",
+    "category": "healthcare",
+    "count": 8,
+    "total_articles": 18,
+    "saliency": 0.4444
+  },
+  {
+    "date": "2025-06-29",
+    "category": "housing",
+    "count": 4,
+    "total_articles": 18,
+    "saliency": 0.2222
+  },
+  {
+    "date": "2025-06-29",
+    "category": "insurance",
+    "count": 4,
+    "total_articles": 18,
+    "saliency": 0.2222
+  },
+  {
+    "date": "2025-06-29",
+    "category": "personal care",
+    "count": 2,
+    "total_articles": 18,
+    "saliency": 0.1111
+  },
+  {
+    "date": "2025-06-29",
+    "category": "technology",
+    "count": 3,
+    "total_articles": 18,
+    "saliency": 0.1667
+  },
+  {
+    "date": "2025-06-29",
+    "category": "telecom",
+    "count": 1,
+    "total_articles": 18,
+    "saliency": 0.0556
+  },
+  {
+    "date": "2025-06-29",
+    "category": "transportation",
+    "count": 3,
+    "total_articles": 18,
+    "saliency": 0.1667
+  },
+  {
+    "date": "2025-06-29",
+    "category": "travel & leisure",
+    "count": 4,
+    "total_articles": 18,
+    "saliency": 0.2222
+  },
+  {
+    "date": "2025-06-30",
+    "category": "childcare",
+    "count": 1,
+    "total_articles": 68,
+    "saliency": 0.0147
+  },
+  {
+    "date": "2025-06-30",
+    "category": "clothing",
+    "count": 14,
+    "total_articles": 68,
+    "saliency": 0.2059
+  },
+  {
+    "date": "2025-06-30",
+    "category": "education",
+    "count": 17,
+    "total_articles": 68,
+    "saliency": 0.25
+  },
+  {
+    "date": "2025-06-30",
+    "category": "energy",
+    "count": 30,
+    "total_articles": 68,
+    "saliency": 0.4412
+  },
+  {
+    "date": "2025-06-30",
+    "category": "entertainment",
+    "count": 8,
+    "total_articles": 68,
+    "saliency": 0.1176
+  },
+  {
+    "date": "2025-06-30",
+    "category": "food",
+    "count": 12,
+    "total_articles": 68,
+    "saliency": 0.1765
+  },
+  {
+    "date": "2025-06-30",
+    "category": "healthcare",
+    "count": 15,
+    "total_articles": 68,
+    "saliency": 0.2206
+  },
+  {
+    "date": "2025-06-30",
+    "category": "housing",
+    "count": 22,
+    "total_articles": 68,
+    "saliency": 0.3235
+  },
+  {
+    "date": "2025-06-30",
+    "category": "insurance",
+    "count": 6,
+    "total_articles": 68,
+    "saliency": 0.0882
+  },
+  {
+    "date": "2025-06-30",
+    "category": "personal care",
+    "count": 3,
+    "total_articles": 68,
+    "saliency": 0.0441
+  },
+  {
+    "date": "2025-06-30",
+    "category": "technology",
+    "count": 18,
+    "total_articles": 68,
+    "saliency": 0.2647
+  },
+  {
+    "date": "2025-06-30",
+    "category": "telecom",
+    "count": 4,
+    "total_articles": 68,
+    "saliency": 0.0588
+  },
+  {
+    "date": "2025-06-30",
+    "category": "transportation",
+    "count": 14,
+    "total_articles": 68,
+    "saliency": 0.2059
+  },
+  {
+    "date": "2025-06-30",
+    "category": "travel & leisure",
+    "count": 9,
+    "total_articles": 68,
+    "saliency": 0.1324
+  },
+  {
+    "date": "2025-07-01",
+    "category": "childcare",
+    "count": 24,
+    "total_articles": 2050,
+    "saliency": 0.0117
+  },
+  {
+    "date": "2025-07-01",
+    "category": "clothing",
+    "count": 13,
+    "total_articles": 77,
+    "saliency": 0.1688
+  },
+  {
+    "date": "2025-07-01",
+    "category": "education",
+    "count": 15,
+    "total_articles": 77,
+    "saliency": 0.1948
+  },
+  {
+    "date": "2025-07-01",
+    "category": "energy",
+    "count": 24,
+    "total_articles": 77,
+    "saliency": 0.3117
+  },
+  {
+    "date": "2025-07-01",
+    "category": "entertainment",
+    "count": 6,
+    "total_articles": 77,
+    "saliency": 0.0779
+  },
+  {
+    "date": "2025-07-01",
+    "category": "food",
+    "count": 14,
+    "total_articles": 77,
+    "saliency": 0.1818
+  },
+  {
+    "date": "2025-07-01",
+    "category": "healthcare",
+    "count": 20,
+    "total_articles": 77,
+    "saliency": 0.2597
+  },
+  {
+    "date": "2025-07-01",
+    "category": "housing",
+    "count": 19,
+    "total_articles": 77,
+    "saliency": 0.2468
+  },
+  {
+    "date": "2025-07-01",
+    "category": "insurance",
+    "count": 16,
+    "total_articles": 77,
+    "saliency": 0.2078
+  },
+  {
+    "date": "2025-07-01",
+    "category": "personal care",
+    "count": 1,
+    "total_articles": 77,
+    "saliency": 0.013
+  },
+  {
+    "date": "2025-07-01",
+    "category": "technology",
+    "count": 15,
+    "total_articles": 77,
+    "saliency": 0.1948
+  },
+  {
+    "date": "2025-07-01",
+    "category": "telecom",
+    "count": 3,
+    "total_articles": 77,
+    "saliency": 0.039
+  },
+  {
+    "date": "2025-07-01",
+    "category": "transportation",
+    "count": 13,
+    "total_articles": 77,
+    "saliency": 0.1688
+  },
+  {
+    "date": "2025-07-01",
+    "category": "travel & leisure",
+    "count": 10,
+    "total_articles": 77,
+    "saliency": 0.1299
+  },
+  {
+    "date": "2025-07-02",
+    "category": "childcare",
+    "count": 25,
+    "total_articles": 1763,
+    "saliency": 0.0142
+  },
+  {
+    "date": "2025-07-02",
+    "category": "clothing",
+    "count": 9,
+    "total_articles": 55,
+    "saliency": 0.1636
+  },
+  {
+    "date": "2025-07-02",
+    "category": "education",
+    "count": 9,
+    "total_articles": 55,
+    "saliency": 0.1636
+  },
+  {
+    "date": "2025-07-02",
+    "category": "energy",
+    "count": 21,
+    "total_articles": 55,
+    "saliency": 0.3818
+  },
+  {
+    "date": "2025-07-02",
+    "category": "entertainment",
+    "count": 4,
+    "total_articles": 55,
+    "saliency": 0.0727
+  },
+  {
+    "date": "2025-07-02",
+    "category": "food",
+    "count": 12,
+    "total_articles": 55,
+    "saliency": 0.2182
+  },
+  {
+    "date": "2025-07-02",
+    "category": "healthcare",
+    "count": 6,
+    "total_articles": 55,
+    "saliency": 0.1091
+  },
+  {
+    "date": "2025-07-02",
+    "category": "housing",
+    "count": 9,
+    "total_articles": 55,
+    "saliency": 0.1636
+  },
+  {
+    "date": "2025-07-02",
+    "category": "insurance",
+    "count": 3,
+    "total_articles": 55,
+    "saliency": 0.0545
+  },
+  {
+    "date": "2025-07-02",
+    "category": "personal care",
+    "count": 1,
+    "total_articles": 55,
+    "saliency": 0.0182
+  },
+  {
+    "date": "2025-07-02",
+    "category": "technology",
+    "count": 8,
+    "total_articles": 55,
+    "saliency": 0.1455
+  },
+  {
+    "date": "2025-07-02",
+    "category": "telecom",
+    "count": 2,
+    "total_articles": 55,
+    "saliency": 0.0364
+  },
+  {
+    "date": "2025-07-02",
+    "category": "transportation",
+    "count": 12,
+    "total_articles": 55,
+    "saliency": 0.2182
+  },
+  {
+    "date": "2025-07-02",
+    "category": "travel & leisure",
+    "count": 4,
+    "total_articles": 55,
+    "saliency": 0.0727
+  },
+  {
+    "date": "2025-07-03",
+    "category": "childcare",
+    "count": 20,
+    "total_articles": 1852,
+    "saliency": 0.0108
+  },
+  {
+    "date": "2025-07-03",
+    "category": "clothing",
+    "count": 20,
+    "total_articles": 87,
+    "saliency": 0.2299
+  },
+  {
+    "date": "2025-07-03",
+    "category": "education",
+    "count": 17,
+    "total_articles": 87,
+    "saliency": 0.1954
+  },
+  {
+    "date": "2025-07-03",
+    "category": "energy",
+    "count": 32,
+    "total_articles": 87,
+    "saliency": 0.3678
+  },
+  {
+    "date": "2025-07-03",
+    "category": "entertainment",
+    "count": 7,
+    "total_articles": 87,
+    "saliency": 0.0805
+  },
+  {
+    "date": "2025-07-03",
+    "category": "food",
+    "count": 24,
+    "total_articles": 87,
+    "saliency": 0.2759
+  },
+  {
+    "date": "2025-07-03",
+    "category": "healthcare",
+    "count": 22,
+    "total_articles": 87,
+    "saliency": 0.2529
+  },
+  {
+    "date": "2025-07-03",
+    "category": "housing",
+    "count": 16,
+    "total_articles": 87,
+    "saliency": 0.1839
+  },
+  {
+    "date": "2025-07-03",
+    "category": "insurance",
+    "count": 9,
+    "total_articles": 87,
+    "saliency": 0.1034
+  },
+  {
+    "date": "2025-07-03",
+    "category": "personal care",
+    "count": 5,
+    "total_articles": 87,
+    "saliency": 0.0575
+  },
+  {
+    "date": "2025-07-03",
+    "category": "technology",
+    "count": 13,
+    "total_articles": 87,
+    "saliency": 0.1494
+  },
+  {
+    "date": "2025-07-03",
+    "category": "telecom",
+    "count": 1,
+    "total_articles": 87,
+    "saliency": 0.0115
+  },
+  {
+    "date": "2025-07-03",
+    "category": "transportation",
+    "count": 7,
+    "total_articles": 87,
+    "saliency": 0.0805
+  },
+  {
+    "date": "2025-07-03",
+    "category": "travel & leisure",
+    "count": 10,
+    "total_articles": 87,
+    "saliency": 0.1149
+  },
+  {
+    "date": "2025-07-04",
+    "category": "childcare",
+    "count": 13,
+    "total_articles": 982,
+    "saliency": 0.0132
+  },
+  {
+    "date": "2025-07-04",
+    "category": "clothing",
+    "count": 10,
+    "total_articles": 42,
+    "saliency": 0.2381
+  },
+  {
+    "date": "2025-07-04",
+    "category": "education",
+    "count": 4,
+    "total_articles": 42,
+    "saliency": 0.0952
+  },
+  {
+    "date": "2025-07-04",
+    "category": "energy",
+    "count": 24,
+    "total_articles": 42,
+    "saliency": 0.5714
+  },
+  {
+    "date": "2025-07-04",
+    "category": "entertainment",
+    "count": 9,
+    "total_articles": 42,
+    "saliency": 0.2143
+  },
+  {
+    "date": "2025-07-04",
+    "category": "food",
+    "count": 15,
+    "total_articles": 42,
+    "saliency": 0.3571
+  },
+  {
+    "date": "2025-07-04",
+    "category": "healthcare",
+    "count": 7,
+    "total_articles": 42,
+    "saliency": 0.1667
+  },
+  {
+    "date": "2025-07-04",
+    "category": "housing",
+    "count": 7,
+    "total_articles": 42,
+    "saliency": 0.1667
+  },
+  {
+    "date": "2025-07-04",
+    "category": "insurance",
+    "count": 5,
+    "total_articles": 42,
+    "saliency": 0.119
+  },
+  {
+    "date": "2025-07-04",
+    "category": "personal care",
+    "count": 7,
+    "total_articles": 42,
+    "saliency": 0.1667
+  },
+  {
+    "date": "2025-07-04",
+    "category": "technology",
+    "count": 11,
+    "total_articles": 42,
+    "saliency": 0.2619
+  },
+  {
+    "date": "2025-07-04",
+    "category": "telecom",
+    "count": 5,
+    "total_articles": 42,
+    "saliency": 0.119
+  },
+  {
+    "date": "2025-07-04",
+    "category": "transportation",
+    "count": 11,
+    "total_articles": 42,
+    "saliency": 0.2619
+  },
+  {
+    "date": "2025-07-04",
+    "category": "travel & leisure",
+    "count": 9,
+    "total_articles": 42,
+    "saliency": 0.2143
+  },
+  {
+    "date": "2025-07-05",
+    "category": "childcare",
+    "count": 9,
+    "total_articles": 458,
+    "saliency": 0.0197
+  },
+  {
+    "date": "2025-07-05",
+    "category": "clothing",
+    "count": 3,
+    "total_articles": 18,
+    "saliency": 0.1667
+  },
+  {
+    "date": "2025-07-05",
+    "category": "education",
+    "count": 5,
+    "total_articles": 18,
+    "saliency": 0.2778
+  },
+  {
+    "date": "2025-07-05",
+    "category": "energy",
+    "count": 9,
+    "total_articles": 18,
+    "saliency": 0.5
+  },
+  {
+    "date": "2025-07-05",
+    "category": "entertainment",
+    "count": 2,
+    "total_articles": 18,
+    "saliency": 0.1111
+  },
+  {
+    "date": "2025-07-05",
+    "category": "food",
+    "count": 6,
+    "total_articles": 18,
+    "saliency": 0.3333
+  },
+  {
+    "date": "2025-07-05",
+    "category": "healthcare",
+    "count": 8,
+    "total_articles": 18,
+    "saliency": 0.4444
+  },
+  {
+    "date": "2025-07-05",
+    "category": "housing",
+    "count": 7,
+    "total_articles": 18,
+    "saliency": 0.3889
+  },
+  {
+    "date": "2025-07-05",
+    "category": "insurance",
+    "count": 3,
+    "total_articles": 18,
+    "saliency": 0.1667
+  },
+  {
+    "date": "2025-07-05",
+    "category": "personal care",
+    "count": 1,
+    "total_articles": 18,
+    "saliency": 0.0556
+  },
+  {
+    "date": "2025-07-05",
+    "category": "technology",
+    "count": 2,
+    "total_articles": 18,
+    "saliency": 0.1111
+  },
+  {
+    "date": "2025-07-05",
+    "category": "telecom",
+    "count": 37,
+    "total_articles": 458,
+    "saliency": 0.0808
+  },
+  {
+    "date": "2025-07-05",
+    "category": "transportation",
+    "count": 6,
+    "total_articles": 18,
+    "saliency": 0.3333
+  },
+  {
+    "date": "2025-07-05",
+    "category": "travel & leisure",
+    "count": 3,
+    "total_articles": 18,
+    "saliency": 0.1667
+  },
+  {
+    "date": "2025-07-06",
+    "category": "childcare",
+    "count": 6,
+    "total_articles": 434,
+    "saliency": 0.0138
+  },
+  {
+    "date": "2025-07-06",
+    "category": "clothing",
+    "count": 3,
+    "total_articles": 13,
+    "saliency": 0.2308
+  },
+  {
+    "date": "2025-07-06",
+    "category": "education",
+    "count": 2,
+    "total_articles": 13,
+    "saliency": 0.1538
+  },
+  {
+    "date": "2025-07-06",
+    "category": "energy",
+    "count": 4,
+    "total_articles": 13,
+    "saliency": 0.3077
+  },
+  {
+    "date": "2025-07-06",
+    "category": "entertainment",
+    "count": 2,
+    "total_articles": 13,
+    "saliency": 0.1538
+  },
+  {
+    "date": "2025-07-06",
+    "category": "food",
+    "count": 3,
+    "total_articles": 13,
+    "saliency": 0.2308
+  },
+  {
+    "date": "2025-07-06",
+    "category": "healthcare",
+    "count": 4,
+    "total_articles": 13,
+    "saliency": 0.3077
+  },
+  {
+    "date": "2025-07-06",
+    "category": "housing",
+    "count": 4,
+    "total_articles": 13,
+    "saliency": 0.3077
+  },
+  {
+    "date": "2025-07-06",
+    "category": "insurance",
+    "count": 2,
+    "total_articles": 13,
+    "saliency": 0.1538
+  },
+  {
+    "date": "2025-07-06",
+    "category": "personal care",
+    "count": 33,
+    "total_articles": 434,
+    "saliency": 0.076
+  },
+  {
+    "date": "2025-07-06",
+    "category": "technology",
+    "count": 2,
+    "total_articles": 13,
+    "saliency": 0.1538
+  },
+  {
+    "date": "2025-07-06",
+    "category": "telecom",
+    "count": 1,
+    "total_articles": 13,
+    "saliency": 0.0769
+  },
+  {
+    "date": "2025-07-06",
+    "category": "transportation",
+    "count": 5,
+    "total_articles": 13,
+    "saliency": 0.3846
+  },
+  {
+    "date": "2025-07-06",
+    "category": "travel & leisure",
+    "count": 1,
+    "total_articles": 13,
+    "saliency": 0.0769
+  },
+  {
+    "date": "2025-07-07",
+    "category": "childcare",
+    "count": 1,
+    "total_articles": 51,
+    "saliency": 0.0196
+  },
+  {
+    "date": "2025-07-07",
+    "category": "clothing",
+    "count": 7,
+    "total_articles": 51,
+    "saliency": 0.1373
+  },
+  {
+    "date": "2025-07-07",
+    "category": "education",
+    "count": 8,
+    "total_articles": 51,
+    "saliency": 0.1569
+  },
+  {
+    "date": "2025-07-07",
+    "category": "energy",
+    "count": 28,
+    "total_articles": 51,
+    "saliency": 0.549
+  },
+  {
+    "date": "2025-07-07",
+    "category": "entertainment",
+    "count": 5,
+    "total_articles": 51,
+    "saliency": 0.098
+  },
+  {
+    "date": "2025-07-07",
+    "category": "food",
+    "count": 8,
+    "total_articles": 51,
+    "saliency": 0.1569
+  },
+  {
+    "date": "2025-07-07",
+    "category": "healthcare",
+    "count": 12,
+    "total_articles": 51,
+    "saliency": 0.2353
+  },
+  {
+    "date": "2025-07-07",
+    "category": "housing",
+    "count": 10,
+    "total_articles": 51,
+    "saliency": 0.1961
+  },
+  {
+    "date": "2025-07-07",
+    "category": "insurance",
+    "count": 5,
+    "total_articles": 51,
+    "saliency": 0.098
+  },
+  {
+    "date": "2025-07-07",
+    "category": "personal care",
+    "count": 77,
+    "total_articles": 1439,
+    "saliency": 0.0535
+  },
+  {
+    "date": "2025-07-07",
+    "category": "technology",
+    "count": 7,
+    "total_articles": 51,
+    "saliency": 0.1373
+  },
+  {
+    "date": "2025-07-07",
+    "category": "telecom",
+    "count": 4,
+    "total_articles": 51,
+    "saliency": 0.0784
+  },
+  {
+    "date": "2025-07-07",
+    "category": "transportation",
+    "count": 15,
+    "total_articles": 51,
+    "saliency": 0.2941
+  },
+  {
+    "date": "2025-07-07",
+    "category": "travel & leisure",
+    "count": 5,
+    "total_articles": 51,
+    "saliency": 0.098
+  },
+  {
+    "date": "2025-07-08",
+    "category": "childcare",
+    "count": 2,
+    "total_articles": 66,
+    "saliency": 0.0303
+  },
+  {
+    "date": "2025-07-08",
+    "category": "clothing",
+    "count": 12,
+    "total_articles": 66,
+    "saliency": 0.1818
+  },
+  {
+    "date": "2025-07-08",
+    "category": "education",
+    "count": 10,
+    "total_articles": 66,
+    "saliency": 0.1515
+  },
+  {
+    "date": "2025-07-08",
+    "category": "energy",
+    "count": 23,
+    "total_articles": 66,
+    "saliency": 0.3485
+  },
+  {
+    "date": "2025-07-08",
+    "category": "entertainment",
+    "count": 7,
+    "total_articles": 66,
+    "saliency": 0.1061
+  },
+  {
+    "date": "2025-07-08",
+    "category": "food",
+    "count": 15,
+    "total_articles": 66,
+    "saliency": 0.2273
+  },
+  {
+    "date": "2025-07-08",
+    "category": "healthcare",
+    "count": 13,
+    "total_articles": 66,
+    "saliency": 0.197
+  },
+  {
+    "date": "2025-07-08",
+    "category": "housing",
+    "count": 15,
+    "total_articles": 66,
+    "saliency": 0.2273
+  },
+  {
+    "date": "2025-07-08",
+    "category": "insurance",
+    "count": 7,
+    "total_articles": 66,
+    "saliency": 0.1061
+  },
+  {
+    "date": "2025-07-08",
+    "category": "personal care",
+    "count": 3,
+    "total_articles": 66,
+    "saliency": 0.0455
+  },
+  {
+    "date": "2025-07-08",
+    "category": "technology",
+    "count": 18,
+    "total_articles": 66,
+    "saliency": 0.2727
+  },
+  {
+    "date": "2025-07-08",
+    "category": "telecom",
+    "count": 1,
+    "total_articles": 66,
+    "saliency": 0.0152
+  },
+  {
+    "date": "2025-07-08",
+    "category": "transportation",
+    "count": 13,
+    "total_articles": 66,
+    "saliency": 0.197
+  },
+  {
+    "date": "2025-07-08",
+    "category": "travel & leisure",
+    "count": 7,
+    "total_articles": 66,
+    "saliency": 0.1061
+  },
+  {
+    "date": "2025-07-09",
+    "category": "childcare",
+    "count": 1,
+    "total_articles": 62,
+    "saliency": 0.0161
+  },
+  {
+    "date": "2025-07-09",
+    "category": "clothing",
+    "count": 13,
+    "total_articles": 62,
+    "saliency": 0.2097
+  },
+  {
+    "date": "2025-07-09",
+    "category": "education",
+    "count": 8,
+    "total_articles": 62,
+    "saliency": 0.129
+  },
+  {
+    "date": "2025-07-09",
+    "category": "energy",
+    "count": 20,
+    "total_articles": 62,
+    "saliency": 0.3226
+  },
+  {
+    "date": "2025-07-09",
+    "category": "entertainment",
+    "count": 3,
+    "total_articles": 62,
+    "saliency": 0.0484
+  },
+  {
+    "date": "2025-07-09",
+    "category": "food",
+    "count": 11,
+    "total_articles": 62,
+    "saliency": 0.1774
+  },
+  {
+    "date": "2025-07-09",
+    "category": "healthcare",
+    "count": 16,
+    "total_articles": 62,
+    "saliency": 0.2581
+  },
+  {
+    "date": "2025-07-09",
+    "category": "housing",
+    "count": 18,
+    "total_articles": 62,
+    "saliency": 0.2903
+  },
+  {
+    "date": "2025-07-09",
+    "category": "insurance",
+    "count": 12,
+    "total_articles": 62,
+    "saliency": 0.1935
+  },
+  {
+    "date": "2025-07-09",
+    "category": "personal care",
+    "count": 4,
+    "total_articles": 62,
+    "saliency": 0.0645
+  },
+  {
+    "date": "2025-07-09",
+    "category": "technology",
+    "count": 4,
+    "total_articles": 62,
+    "saliency": 0.0645
+  },
+  {
+    "date": "2025-07-09",
+    "category": "telecom",
+    "count": 3,
+    "total_articles": 62,
+    "saliency": 0.0484
+  },
+  {
+    "date": "2025-07-09",
+    "category": "transportation",
+    "count": 12,
+    "total_articles": 62,
+    "saliency": 0.1935
+  },
+  {
+    "date": "2025-07-09",
+    "category": "travel & leisure",
+    "count": 6,
+    "total_articles": 62,
+    "saliency": 0.0968
+  },
+  {
+    "date": "2025-07-10",
+    "category": "childcare",
+    "count": 14,
+    "total_articles": 1728,
+    "saliency": 0.0081
+  },
+  {
+    "date": "2025-07-10",
+    "category": "clothing",
+    "count": 15,
+    "total_articles": 65,
+    "saliency": 0.2308
+  },
+  {
+    "date": "2025-07-10",
+    "category": "education",
+    "count": 12,
+    "total_articles": 65,
+    "saliency": 0.1846
+  },
+  {
+    "date": "2025-07-10",
+    "category": "energy",
+    "count": 26,
+    "total_articles": 65,
+    "saliency": 0.4
+  },
+  {
+    "date": "2025-07-10",
+    "category": "entertainment",
+    "count": 5,
+    "total_articles": 65,
+    "saliency": 0.0769
+  },
+  {
+    "date": "2025-07-10",
+    "category": "food",
+    "count": 18,
+    "total_articles": 65,
+    "saliency": 0.2769
+  },
+  {
+    "date": "2025-07-10",
+    "category": "healthcare",
+    "count": 18,
+    "total_articles": 65,
+    "saliency": 0.2769
+  },
+  {
+    "date": "2025-07-10",
+    "category": "housing",
+    "count": 12,
+    "total_articles": 65,
+    "saliency": 0.1846
+  },
+  {
+    "date": "2025-07-10",
+    "category": "insurance",
+    "count": 5,
+    "total_articles": 65,
+    "saliency": 0.0769
+  },
+  {
+    "date": "2025-07-10",
+    "category": "personal care",
+    "count": 5,
+    "total_articles": 65,
+    "saliency": 0.0769
+  },
+  {
+    "date": "2025-07-10",
+    "category": "technology",
+    "count": 15,
+    "total_articles": 65,
+    "saliency": 0.2308
+  },
+  {
+    "date": "2025-07-10",
+    "category": "telecom",
+    "count": 6,
+    "total_articles": 65,
+    "saliency": 0.0923
+  },
+  {
+    "date": "2025-07-10",
+    "category": "transportation",
+    "count": 12,
+    "total_articles": 65,
+    "saliency": 0.1846
+  },
+  {
+    "date": "2025-07-10",
+    "category": "travel & leisure",
+    "count": 12,
+    "total_articles": 65,
+    "saliency": 0.1846
+  },
+  {
+    "date": "2025-07-11",
+    "category": "childcare",
+    "count": 24,
+    "total_articles": 1531,
+    "saliency": 0.0157
+  },
+  {
+    "date": "2025-07-11",
+    "category": "clothing",
+    "count": 19,
+    "total_articles": 56,
+    "saliency": 0.3393
+  },
+  {
+    "date": "2025-07-11",
+    "category": "education",
+    "count": 11,
+    "total_articles": 56,
+    "saliency": 0.1964
+  },
+  {
+    "date": "2025-07-11",
+    "category": "energy",
+    "count": 26,
+    "total_articles": 56,
+    "saliency": 0.4643
+  },
+  {
+    "date": "2025-07-11",
+    "category": "entertainment",
+    "count": 6,
+    "total_articles": 56,
+    "saliency": 0.1071
+  },
+  {
+    "date": "2025-07-11",
+    "category": "food",
+    "count": 20,
+    "total_articles": 56,
+    "saliency": 0.3571
+  },
+  {
+    "date": "2025-07-11",
+    "category": "healthcare",
+    "count": 9,
+    "total_articles": 56,
+    "saliency": 0.1607
+  },
+  {
+    "date": "2025-07-11",
+    "category": "housing",
+    "count": 17,
+    "total_articles": 56,
+    "saliency": 0.3036
+  },
+  {
+    "date": "2025-07-11",
+    "category": "insurance",
+    "count": 4,
+    "total_articles": 56,
+    "saliency": 0.0714
+  },
+  {
+    "date": "2025-07-11",
+    "category": "personal care",
+    "count": 1,
+    "total_articles": 56,
+    "saliency": 0.0179
+  },
+  {
+    "date": "2025-07-11",
+    "category": "technology",
+    "count": 16,
+    "total_articles": 56,
+    "saliency": 0.2857
+  },
+  {
+    "date": "2025-07-11",
+    "category": "telecom",
+    "count": 5,
+    "total_articles": 56,
+    "saliency": 0.0893
+  },
+  {
+    "date": "2025-07-11",
+    "category": "transportation",
+    "count": 11,
+    "total_articles": 56,
+    "saliency": 0.1964
+  },
+  {
+    "date": "2025-07-11",
+    "category": "travel & leisure",
+    "count": 10,
+    "total_articles": 56,
+    "saliency": 0.1786
+  },
+  {
+    "date": "2025-07-12",
+    "category": "childcare",
+    "count": 15,
+    "total_articles": 595,
+    "saliency": 0.0252
+  },
+  {
+    "date": "2025-07-12",
+    "category": "clothing",
+    "count": 9,
+    "total_articles": 30,
+    "saliency": 0.3
+  },
+  {
+    "date": "2025-07-12",
+    "category": "education",
+    "count": 9,
+    "total_articles": 30,
+    "saliency": 0.3
+  },
+  {
+    "date": "2025-07-12",
+    "category": "energy",
+    "count": 14,
+    "total_articles": 30,
+    "saliency": 0.4667
+  },
+  {
+    "date": "2025-07-12",
+    "category": "entertainment",
+    "count": 3,
+    "total_articles": 30,
+    "saliency": 0.1
+  },
+  {
+    "date": "2025-07-12",
+    "category": "food",
+    "count": 11,
+    "total_articles": 30,
+    "saliency": 0.3667
+  },
+  {
+    "date": "2025-07-12",
+    "category": "healthcare",
+    "count": 12,
+    "total_articles": 30,
+    "saliency": 0.4
+  },
+  {
+    "date": "2025-07-12",
+    "category": "housing",
+    "count": 4,
+    "total_articles": 30,
+    "saliency": 0.1333
+  },
+  {
+    "date": "2025-07-12",
+    "category": "insurance",
+    "count": 5,
+    "total_articles": 30,
+    "saliency": 0.1667
+  },
+  {
+    "date": "2025-07-12",
+    "category": "personal care",
+    "count": 2,
+    "total_articles": 30,
+    "saliency": 0.0667
+  },
+  {
+    "date": "2025-07-12",
+    "category": "technology",
+    "count": 8,
+    "total_articles": 30,
+    "saliency": 0.2667
+  },
+  {
+    "date": "2025-07-12",
+    "category": "telecom",
+    "count": 4,
+    "total_articles": 30,
+    "saliency": 0.1333
+  },
+  {
+    "date": "2025-07-12",
+    "category": "transportation",
+    "count": 2,
+    "total_articles": 30,
+    "saliency": 0.0667
+  },
+  {
+    "date": "2025-07-12",
+    "category": "travel & leisure",
+    "count": 2,
+    "total_articles": 30,
+    "saliency": 0.0667
+  },
+  {
+    "date": "2025-07-13",
+    "category": "childcare",
+    "count": 7,
+    "total_articles": 474,
+    "saliency": 0.0148
+  },
+  {
+    "date": "2025-07-13",
+    "category": "clothing",
+    "count": 3,
+    "total_articles": 13,
+    "saliency": 0.2308
+  },
+  {
+    "date": "2025-07-13",
+    "category": "education",
+    "count": 2,
+    "total_articles": 13,
+    "saliency": 0.1538
+  },
+  {
+    "date": "2025-07-13",
+    "category": "energy",
+    "count": 6,
+    "total_articles": 13,
+    "saliency": 0.4615
+  },
+  {
+    "date": "2025-07-13",
+    "category": "entertainment",
+    "count": 1,
+    "total_articles": 13,
+    "saliency": 0.0769
+  },
+  {
+    "date": "2025-07-13",
+    "category": "food",
+    "count": 5,
+    "total_articles": 13,
+    "saliency": 0.3846
+  },
+  {
+    "date": "2025-07-13",
+    "category": "healthcare",
+    "count": 5,
+    "total_articles": 13,
+    "saliency": 0.3846
+  },
+  {
+    "date": "2025-07-13",
+    "category": "housing",
+    "count": 4,
+    "total_articles": 13,
+    "saliency": 0.3077
+  },
+  {
+    "date": "2025-07-13",
+    "category": "insurance",
+    "count": 3,
+    "total_articles": 13,
+    "saliency": 0.2308
+  },
+  {
+    "date": "2025-07-13",
+    "category": "personal care",
+    "count": 21,
+    "total_articles": 474,
+    "saliency": 0.0443
+  },
+  {
+    "date": "2025-07-13",
+    "category": "technology",
+    "count": 4,
+    "total_articles": 13,
+    "saliency": 0.3077
+  },
+  {
+    "date": "2025-07-13",
+    "category": "telecom",
+    "count": 27,
+    "total_articles": 474,
+    "saliency": 0.057
+  },
+  {
+    "date": "2025-07-13",
+    "category": "transportation",
+    "count": 4,
+    "total_articles": 13,
+    "saliency": 0.3077
+  },
+  {
+    "date": "2025-07-13",
+    "category": "travel & leisure",
+    "count": 4,
+    "total_articles": 13,
+    "saliency": 0.3077
+  },
+  {
+    "date": "2025-07-14",
+    "category": "childcare",
+    "count": 13,
+    "total_articles": 1736,
+    "saliency": 0.0075
+  },
+  {
+    "date": "2025-07-14",
+    "category": "clothing",
+    "count": 19,
+    "total_articles": 68,
+    "saliency": 0.2794
+  },
+  {
+    "date": "2025-07-14",
+    "category": "education",
+    "count": 13,
+    "total_articles": 68,
+    "saliency": 0.1912
+  },
+  {
+    "date": "2025-07-14",
+    "category": "energy",
+    "count": 29,
+    "total_articles": 68,
+    "saliency": 0.4265
+  },
+  {
+    "date": "2025-07-14",
+    "category": "entertainment",
+    "count": 4,
+    "total_articles": 68,
+    "saliency": 0.0588
+  },
+  {
+    "date": "2025-07-14",
+    "category": "food",
+    "count": 16,
+    "total_articles": 68,
+    "saliency": 0.2353
+  },
+  {
+    "date": "2025-07-14",
+    "category": "healthcare",
+    "count": 24,
+    "total_articles": 68,
+    "saliency": 0.3529
+  },
+  {
+    "date": "2025-07-14",
+    "category": "housing",
+    "count": 16,
+    "total_articles": 68,
+    "saliency": 0.2353
+  },
+  {
+    "date": "2025-07-14",
+    "category": "insurance",
+    "count": 14,
+    "total_articles": 68,
+    "saliency": 0.2059
+  },
+  {
+    "date": "2025-07-14",
+    "category": "personal care",
+    "count": 4,
+    "total_articles": 68,
+    "saliency": 0.0588
+  },
+  {
+    "date": "2025-07-14",
+    "category": "technology",
+    "count": 16,
+    "total_articles": 68,
+    "saliency": 0.2353
+  },
+  {
+    "date": "2025-07-14",
+    "category": "telecom",
+    "count": 3,
+    "total_articles": 68,
+    "saliency": 0.0441
+  },
+  {
+    "date": "2025-07-14",
+    "category": "transportation",
+    "count": 12,
+    "total_articles": 68,
+    "saliency": 0.1765
+  },
+  {
+    "date": "2025-07-14",
+    "category": "travel & leisure",
+    "count": 7,
+    "total_articles": 68,
+    "saliency": 0.1029
+  },
+  {
+    "date": "2025-07-15",
+    "category": "childcare",
+    "count": 3,
+    "total_articles": 103,
+    "saliency": 0.0291
+  },
+  {
+    "date": "2025-07-15",
+    "category": "clothing",
+    "count": 28,
+    "total_articles": 103,
+    "saliency": 0.2718
+  },
+  {
+    "date": "2025-07-15",
+    "category": "education",
+    "count": 13,
+    "total_articles": 103,
+    "saliency": 0.1262
+  },
+  {
+    "date": "2025-07-15",
+    "category": "energy",
+    "count": 42,
+    "total_articles": 103,
+    "saliency": 0.4078
+  },
+  {
+    "date": "2025-07-15",
+    "category": "entertainment",
+    "count": 8,
+    "total_articles": 103,
+    "saliency": 0.0777
+  },
+  {
+    "date": "2025-07-15",
+    "category": "food",
+    "count": 36,
+    "total_articles": 103,
+    "saliency": 0.3495
+  },
+  {
+    "date": "2025-07-15",
+    "category": "healthcare",
+    "count": 22,
+    "total_articles": 103,
+    "saliency": 0.2136
+  },
+  {
+    "date": "2025-07-15",
+    "category": "housing",
+    "count": 30,
+    "total_articles": 103,
+    "saliency": 0.2913
+  },
+  {
+    "date": "2025-07-15",
+    "category": "insurance",
+    "count": 11,
+    "total_articles": 103,
+    "saliency": 0.1068
+  },
+  {
+    "date": "2025-07-15",
+    "category": "personal care",
+    "count": 7,
+    "total_articles": 103,
+    "saliency": 0.068
+  },
+  {
+    "date": "2025-07-15",
+    "category": "technology",
+    "count": 18,
+    "total_articles": 103,
+    "saliency": 0.1748
+  },
+  {
+    "date": "2025-07-15",
+    "category": "telecom",
+    "count": 4,
+    "total_articles": 103,
+    "saliency": 0.0388
+  },
+  {
+    "date": "2025-07-15",
+    "category": "transportation",
+    "count": 21,
+    "total_articles": 103,
+    "saliency": 0.2039
+  },
+  {
+    "date": "2025-07-15",
+    "category": "travel & leisure",
+    "count": 14,
+    "total_articles": 103,
+    "saliency": 0.1359
+  },
+  {
+    "date": "2025-07-16",
+    "category": "childcare",
+    "count": 1,
+    "total_articles": 111,
+    "saliency": 0.009
+  },
+  {
+    "date": "2025-07-16",
+    "category": "clothing",
+    "count": 30,
+    "total_articles": 111,
+    "saliency": 0.2703
+  },
+  {
+    "date": "2025-07-16",
+    "category": "education",
+    "count": 21,
+    "total_articles": 111,
+    "saliency": 0.1892
+  },
+  {
+    "date": "2025-07-16",
+    "category": "energy",
+    "count": 51,
+    "total_articles": 111,
+    "saliency": 0.4595
+  },
+  {
+    "date": "2025-07-16",
+    "category": "entertainment",
+    "count": 15,
+    "total_articles": 111,
+    "saliency": 0.1351
+  },
+  {
+    "date": "2025-07-16",
+    "category": "food",
+    "count": 32,
+    "total_articles": 111,
+    "saliency": 0.2883
+  },
+  {
+    "date": "2025-07-16",
+    "category": "healthcare",
+    "count": 30,
+    "total_articles": 111,
+    "saliency": 0.2703
+  },
+  {
+    "date": "2025-07-16",
+    "category": "housing",
+    "count": 20,
+    "total_articles": 111,
+    "saliency": 0.1802
+  },
+  {
+    "date": "2025-07-16",
+    "category": "insurance",
+    "count": 20,
+    "total_articles": 111,
+    "saliency": 0.1802
+  },
+  {
+    "date": "2025-07-16",
+    "category": "personal care",
+    "count": 7,
+    "total_articles": 111,
+    "saliency": 0.0631
+  },
+  {
+    "date": "2025-07-16",
+    "category": "technology",
+    "count": 29,
+    "total_articles": 111,
+    "saliency": 0.2613
+  },
+  {
+    "date": "2025-07-16",
+    "category": "telecom",
+    "count": 13,
+    "total_articles": 111,
+    "saliency": 0.1171
+  },
+  {
+    "date": "2025-07-16",
+    "category": "transportation",
+    "count": 23,
+    "total_articles": 111,
+    "saliency": 0.2072
+  },
+  {
+    "date": "2025-07-16",
+    "category": "travel & leisure",
+    "count": 17,
+    "total_articles": 111,
+    "saliency": 0.1532
+  },
+  {
+    "date": "2025-07-17",
+    "category": "childcare",
+    "count": 1,
+    "total_articles": 94,
+    "saliency": 0.0106
+  },
+  {
+    "date": "2025-07-17",
+    "category": "clothing",
+    "count": 30,
+    "total_articles": 94,
+    "saliency": 0.3191
+  },
+  {
+    "date": "2025-07-17",
+    "category": "education",
+    "count": 15,
+    "total_articles": 94,
+    "saliency": 0.1596
+  },
+  {
+    "date": "2025-07-17",
+    "category": "energy",
+    "count": 38,
+    "total_articles": 94,
+    "saliency": 0.4043
+  },
+  {
+    "date": "2025-07-17",
+    "category": "entertainment",
+    "count": 9,
+    "total_articles": 94,
+    "saliency": 0.0957
+  },
+  {
+    "date": "2025-07-17",
+    "category": "food",
+    "count": 24,
+    "total_articles": 94,
+    "saliency": 0.2553
+  },
+  {
+    "date": "2025-07-17",
+    "category": "healthcare",
+    "count": 21,
+    "total_articles": 94,
+    "saliency": 0.2234
+  },
+  {
+    "date": "2025-07-17",
+    "category": "housing",
+    "count": 28,
+    "total_articles": 94,
+    "saliency": 0.2979
+  },
+  {
+    "date": "2025-07-17",
+    "category": "insurance",
+    "count": 12,
+    "total_articles": 94,
+    "saliency": 0.1277
+  },
+  {
+    "date": "2025-07-17",
+    "category": "personal care",
+    "count": 6,
+    "total_articles": 94,
+    "saliency": 0.0638
+  },
+  {
+    "date": "2025-07-17",
+    "category": "technology",
+    "count": 20,
+    "total_articles": 94,
+    "saliency": 0.2128
+  },
+  {
+    "date": "2025-07-17",
+    "category": "telecom",
+    "count": 8,
+    "total_articles": 94,
+    "saliency": 0.0851
+  },
+  {
+    "date": "2025-07-17",
+    "category": "transportation",
+    "count": 17,
+    "total_articles": 94,
+    "saliency": 0.1809
+  },
+  {
+    "date": "2025-07-17",
+    "category": "travel & leisure",
+    "count": 4,
+    "total_articles": 94,
+    "saliency": 0.0426
+  },
+  {
+    "date": "2025-07-18",
+    "category": "childcare",
+    "count": 1,
+    "total_articles": 72,
+    "saliency": 0.0139
+  },
+  {
+    "date": "2025-07-18",
+    "category": "clothing",
+    "count": 16,
+    "total_articles": 72,
+    "saliency": 0.2222
+  },
+  {
+    "date": "2025-07-18",
+    "category": "education",
+    "count": 16,
+    "total_articles": 72,
+    "saliency": 0.2222
+  },
+  {
+    "date": "2025-07-18",
+    "category": "energy",
+    "count": 28,
+    "total_articles": 72,
+    "saliency": 0.3889
+  },
+  {
+    "date": "2025-07-18",
+    "category": "entertainment",
+    "count": 12,
+    "total_articles": 72,
+    "saliency": 0.1667
+  },
+  {
+    "date": "2025-07-18",
+    "category": "food",
+    "count": 17,
+    "total_articles": 72,
+    "saliency": 0.2361
+  },
+  {
+    "date": "2025-07-18",
+    "category": "healthcare",
+    "count": 14,
+    "total_articles": 72,
+    "saliency": 0.1944
+  },
+  {
+    "date": "2025-07-18",
+    "category": "housing",
+    "count": 19,
+    "total_articles": 72,
+    "saliency": 0.2639
+  },
+  {
+    "date": "2025-07-18",
+    "category": "insurance",
+    "count": 7,
+    "total_articles": 72,
+    "saliency": 0.0972
+  },
+  {
+    "date": "2025-07-18",
+    "category": "personal care",
+    "count": 2,
+    "total_articles": 72,
+    "saliency": 0.0278
+  },
+  {
+    "date": "2025-07-18",
+    "category": "technology",
+    "count": 7,
+    "total_articles": 72,
+    "saliency": 0.0972
+  },
+  {
+    "date": "2025-07-18",
+    "category": "telecom",
+    "count": 3,
+    "total_articles": 72,
+    "saliency": 0.0417
+  },
+  {
+    "date": "2025-07-18",
+    "category": "transportation",
+    "count": 10,
+    "total_articles": 72,
+    "saliency": 0.1389
+  },
+  {
+    "date": "2025-07-18",
+    "category": "travel & leisure",
+    "count": 6,
+    "total_articles": 72,
+    "saliency": 0.0833
+  },
+  {
+    "date": "2025-07-19",
+    "category": "childcare",
+    "count": 1,
+    "total_articles": 20,
+    "saliency": 0.05
+  },
+  {
+    "date": "2025-07-19",
+    "category": "clothing",
+    "count": 5,
+    "total_articles": 20,
+    "saliency": 0.25
+  },
+  {
+    "date": "2025-07-19",
+    "category": "education",
+    "count": 8,
+    "total_articles": 20,
+    "saliency": 0.4
+  },
+  {
+    "date": "2025-07-19",
+    "category": "energy",
+    "count": 8,
+    "total_articles": 20,
+    "saliency": 0.4
+  },
+  {
+    "date": "2025-07-19",
+    "category": "entertainment",
+    "count": 4,
+    "total_articles": 20,
+    "saliency": 0.2
+  },
+  {
+    "date": "2025-07-19",
+    "category": "food",
+    "count": 5,
+    "total_articles": 20,
+    "saliency": 0.25
+  },
+  {
+    "date": "2025-07-19",
+    "category": "healthcare",
+    "count": 3,
+    "total_articles": 20,
+    "saliency": 0.15
+  },
+  {
+    "date": "2025-07-19",
+    "category": "housing",
+    "count": 6,
+    "total_articles": 20,
+    "saliency": 0.3
+  },
+  {
+    "date": "2025-07-19",
+    "category": "insurance",
+    "count": 69,
+    "total_articles": 553,
+    "saliency": 0.1248
+  },
+  {
+    "date": "2025-07-19",
+    "category": "personal care",
+    "count": 1,
+    "total_articles": 20,
+    "saliency": 0.05
+  },
+  {
+    "date": "2025-07-19",
+    "category": "technology",
+    "count": 4,
+    "total_articles": 20,
+    "saliency": 0.2
+  },
+  {
+    "date": "2025-07-19",
+    "category": "telecom",
+    "count": 3,
+    "total_articles": 20,
+    "saliency": 0.15
+  },
+  {
+    "date": "2025-07-19",
+    "category": "transportation",
+    "count": 4,
+    "total_articles": 20,
+    "saliency": 0.2
+  },
+  {
+    "date": "2025-07-19",
+    "category": "travel & leisure",
+    "count": 3,
+    "total_articles": 20,
+    "saliency": 0.15
+  },
+  {
+    "date": "2025-07-20",
+    "category": "childcare",
+    "count": 8,
+    "total_articles": 495,
+    "saliency": 0.0162
+  },
+  {
+    "date": "2025-07-20",
+    "category": "clothing",
+    "count": 5,
+    "total_articles": 21,
+    "saliency": 0.2381
+  },
+  {
+    "date": "2025-07-20",
+    "category": "education",
+    "count": 1,
+    "total_articles": 21,
+    "saliency": 0.0476
+  },
+  {
+    "date": "2025-07-20",
+    "category": "energy",
+    "count": 13,
+    "total_articles": 21,
+    "saliency": 0.619
+  },
+  {
+    "date": "2025-07-20",
+    "category": "entertainment",
+    "count": 60,
+    "total_articles": 495,
+    "saliency": 0.1212
+  },
+  {
+    "date": "2025-07-20",
+    "category": "food",
+    "count": 6,
+    "total_articles": 21,
+    "saliency": 0.2857
+  },
+  {
+    "date": "2025-07-20",
+    "category": "healthcare",
+    "count": 3,
+    "total_articles": 21,
+    "saliency": 0.1429
+  },
+  {
+    "date": "2025-07-20",
+    "category": "housing",
+    "count": 3,
+    "total_articles": 21,
+    "saliency": 0.1429
+  },
+  {
+    "date": "2025-07-20",
+    "category": "insurance",
+    "count": 2,
+    "total_articles": 21,
+    "saliency": 0.0952
+  },
+  {
+    "date": "2025-07-20",
+    "category": "personal care",
+    "count": 1,
+    "total_articles": 21,
+    "saliency": 0.0476
+  },
+  {
+    "date": "2025-07-20",
+    "category": "technology",
+    "count": 4,
+    "total_articles": 21,
+    "saliency": 0.1905
+  },
+  {
+    "date": "2025-07-20",
+    "category": "telecom",
+    "count": 1,
+    "total_articles": 21,
+    "saliency": 0.0476
+  },
+  {
+    "date": "2025-07-20",
+    "category": "transportation",
+    "count": 2,
+    "total_articles": 21,
+    "saliency": 0.0952
+  },
+  {
+    "date": "2025-07-20",
+    "category": "travel & leisure",
+    "count": 3,
+    "total_articles": 21,
+    "saliency": 0.1429
+  },
+  {
+    "date": "2025-07-21",
+    "category": "childcare",
+    "count": 18,
+    "total_articles": 1701,
+    "saliency": 0.0106
+  },
+  {
+    "date": "2025-07-21",
+    "category": "clothing",
+    "count": 24,
+    "total_articles": 71,
+    "saliency": 0.338
+  },
+  {
+    "date": "2025-07-21",
+    "category": "education",
+    "count": 14,
+    "total_articles": 71,
+    "saliency": 0.1972
+  },
+  {
+    "date": "2025-07-21",
+    "category": "energy",
+    "count": 26,
+    "total_articles": 71,
+    "saliency": 0.3662
+  },
+  {
+    "date": "2025-07-21",
+    "category": "entertainment",
+    "count": 7,
+    "total_articles": 71,
+    "saliency": 0.0986
+  },
+  {
+    "date": "2025-07-21",
+    "category": "food",
+    "count": 22,
+    "total_articles": 71,
+    "saliency": 0.3099
+  },
+  {
+    "date": "2025-07-21",
+    "category": "healthcare",
+    "count": 10,
+    "total_articles": 71,
+    "saliency": 0.1408
+  },
+  {
+    "date": "2025-07-21",
+    "category": "housing",
+    "count": 13,
+    "total_articles": 71,
+    "saliency": 0.1831
+  },
+  {
+    "date": "2025-07-21",
+    "category": "insurance",
+    "count": 7,
+    "total_articles": 71,
+    "saliency": 0.0986
+  },
+  {
+    "date": "2025-07-21",
+    "category": "personal care",
+    "count": 66,
+    "total_articles": 1701,
+    "saliency": 0.0388
+  },
+  {
+    "date": "2025-07-21",
+    "category": "technology",
+    "count": 18,
+    "total_articles": 71,
+    "saliency": 0.2535
+  },
+  {
+    "date": "2025-07-21",
+    "category": "telecom",
+    "count": 4,
+    "total_articles": 71,
+    "saliency": 0.0563
+  },
+  {
+    "date": "2025-07-21",
+    "category": "transportation",
+    "count": 9,
+    "total_articles": 71,
+    "saliency": 0.1268
+  },
+  {
+    "date": "2025-07-21",
+    "category": "travel & leisure",
+    "count": 6,
+    "total_articles": 71,
+    "saliency": 0.0845
+  },
+  {
+    "date": "2025-07-22",
+    "category": "childcare",
+    "count": 2,
+    "total_articles": 88,
+    "saliency": 0.0227
+  },
+  {
+    "date": "2025-07-22",
+    "category": "clothing",
+    "count": 20,
+    "total_articles": 88,
+    "saliency": 0.2273
+  },
+  {
+    "date": "2025-07-22",
+    "category": "education",
+    "count": 17,
+    "total_articles": 88,
+    "saliency": 0.1932
+  },
+  {
+    "date": "2025-07-22",
+    "category": "energy",
+    "count": 30,
+    "total_articles": 88,
+    "saliency": 0.3409
+  },
+  {
+    "date": "2025-07-22",
+    "category": "entertainment",
+    "count": 11,
+    "total_articles": 88,
+    "saliency": 0.125
+  },
+  {
+    "date": "2025-07-22",
+    "category": "food",
+    "count": 22,
+    "total_articles": 88,
+    "saliency": 0.25
+  },
+  {
+    "date": "2025-07-22",
+    "category": "healthcare",
+    "count": 31,
+    "total_articles": 88,
+    "saliency": 0.3523
+  },
+  {
+    "date": "2025-07-22",
+    "category": "housing",
+    "count": 24,
+    "total_articles": 88,
+    "saliency": 0.2727
+  },
+  {
+    "date": "2025-07-22",
+    "category": "insurance",
+    "count": 16,
+    "total_articles": 88,
+    "saliency": 0.1818
+  },
+  {
+    "date": "2025-07-22",
+    "category": "personal care",
+    "count": 8,
+    "total_articles": 88,
+    "saliency": 0.0909
+  },
+  {
+    "date": "2025-07-22",
+    "category": "technology",
+    "count": 17,
+    "total_articles": 88,
+    "saliency": 0.1932
+  },
+  {
+    "date": "2025-07-22",
+    "category": "telecom",
+    "count": 9,
+    "total_articles": 88,
+    "saliency": 0.1023
+  },
+  {
+    "date": "2025-07-22",
+    "category": "transportation",
+    "count": 15,
+    "total_articles": 88,
+    "saliency": 0.1705
+  },
+  {
+    "date": "2025-07-22",
+    "category": "travel & leisure",
+    "count": 8,
+    "total_articles": 88,
+    "saliency": 0.0909
+  },
+  {
+    "date": "2025-07-23",
+    "category": "childcare",
+    "count": 18,
+    "total_articles": 2051,
+    "saliency": 0.0088
+  },
+  {
+    "date": "2025-07-23",
+    "category": "clothing",
+    "count": 20,
+    "total_articles": 71,
+    "saliency": 0.2817
+  },
+  {
+    "date": "2025-07-23",
+    "category": "education",
+    "count": 14,
+    "total_articles": 71,
+    "saliency": 0.1972
+  },
+  {
+    "date": "2025-07-23",
+    "category": "energy",
+    "count": 28,
+    "total_articles": 71,
+    "saliency": 0.3944
+  },
+  {
+    "date": "2025-07-23",
+    "category": "entertainment",
+    "count": 7,
+    "total_articles": 71,
+    "saliency": 0.0986
+  },
+  {
+    "date": "2025-07-23",
+    "category": "food",
+    "count": 16,
+    "total_articles": 71,
+    "saliency": 0.2254
+  },
+  {
+    "date": "2025-07-23",
+    "category": "healthcare",
+    "count": 18,
+    "total_articles": 71,
+    "saliency": 0.2535
+  },
+  {
+    "date": "2025-07-23",
+    "category": "housing",
+    "count": 25,
+    "total_articles": 71,
+    "saliency": 0.3521
+  },
+  {
+    "date": "2025-07-23",
+    "category": "insurance",
+    "count": 16,
+    "total_articles": 71,
+    "saliency": 0.2254
+  },
+  {
+    "date": "2025-07-23",
+    "category": "personal care",
+    "count": 5,
+    "total_articles": 71,
+    "saliency": 0.0704
+  },
+  {
+    "date": "2025-07-23",
+    "category": "technology",
+    "count": 10,
+    "total_articles": 71,
+    "saliency": 0.1408
+  },
+  {
+    "date": "2025-07-23",
+    "category": "telecom",
+    "count": 8,
+    "total_articles": 71,
+    "saliency": 0.1127
+  },
+  {
+    "date": "2025-07-23",
+    "category": "transportation",
+    "count": 10,
+    "total_articles": 71,
+    "saliency": 0.1408
+  },
+  {
+    "date": "2025-07-23",
+    "category": "travel & leisure",
+    "count": 6,
+    "total_articles": 71,
+    "saliency": 0.0845
+  },
+  {
+    "date": "2025-07-24",
+    "category": "childcare",
+    "count": 1,
+    "total_articles": 98,
+    "saliency": 0.0102
+  },
+  {
+    "date": "2025-07-24",
+    "category": "clothing",
+    "count": 19,
+    "total_articles": 98,
+    "saliency": 0.1939
+  },
+  {
+    "date": "2025-07-24",
+    "category": "education",
+    "count": 12,
+    "total_articles": 98,
+    "saliency": 0.1224
+  },
+  {
+    "date": "2025-07-24",
+    "category": "energy",
+    "count": 33,
+    "total_articles": 98,
+    "saliency": 0.3367
+  },
+  {
+    "date": "2025-07-24",
+    "category": "entertainment",
+    "count": 9,
+    "total_articles": 98,
+    "saliency": 0.0918
+  },
+  {
+    "date": "2025-07-24",
+    "category": "food",
+    "count": 18,
+    "total_articles": 98,
+    "saliency": 0.1837
+  },
+  {
+    "date": "2025-07-24",
+    "category": "healthcare",
+    "count": 40,
+    "total_articles": 98,
+    "saliency": 0.4082
+  },
+  {
+    "date": "2025-07-24",
+    "category": "housing",
+    "count": 30,
+    "total_articles": 98,
+    "saliency": 0.3061
+  },
+  {
+    "date": "2025-07-24",
+    "category": "insurance",
+    "count": 26,
+    "total_articles": 98,
+    "saliency": 0.2653
+  },
+  {
+    "date": "2025-07-24",
+    "category": "personal care",
+    "count": 2,
+    "total_articles": 98,
+    "saliency": 0.0204
+  },
+  {
+    "date": "2025-07-24",
+    "category": "technology",
+    "count": 14,
+    "total_articles": 98,
+    "saliency": 0.1429
+  },
+  {
+    "date": "2025-07-24",
+    "category": "telecom",
+    "count": 5,
+    "total_articles": 98,
+    "saliency": 0.051
+  },
+  {
+    "date": "2025-07-24",
+    "category": "transportation",
+    "count": 21,
+    "total_articles": 98,
+    "saliency": 0.2143
+  },
+  {
+    "date": "2025-07-24",
+    "category": "travel & leisure",
+    "count": 7,
+    "total_articles": 98,
+    "saliency": 0.0714
   }
 ]
